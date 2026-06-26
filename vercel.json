@@ -1,3 +1,5 @@
 {
-  "alias": ["domaineduprunello.vercel.app"]
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install"
 }

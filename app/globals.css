@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-cormorant);
+
+  /* Palette Oliviers de Palombaggia */
+  --color-olive: #6B7240;
+  --color-olive-dark: #505535;
+  --color-olive-light: #8A9458;
+  --color-dark: #1A1A14;
+  --color-dark-soft: #2C2C24;
+  --color-cream: #FAF8F3;
+  --color-warm: #F5F0E8;
+  --color-stone: #C9B99A;
+  --color-mist: #E8E4DC;
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0rem;
+  --background: #FAF8F3;
+  --foreground: #1A1A14;
+  --card: #FAF8F3;
+  --card-foreground: #1A1A14;
+  --popover: #FAF8F3;
+  --popover-foreground: #1A1A14;
+  --primary: #6B7240;
+  --primary-foreground: #FAF8F3;
+  --secondary: #F5F0E8;
+  --secondary-foreground: #1A1A14;
+  --muted: #F5F0E8;
+  --muted-foreground: #6B6B5A;
+  --accent: #F5F0E8;
+  --accent-foreground: #1A1A14;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #E8E4DC;
+  --input: #E8E4DC;
+  --ring: #6B7240;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: #F5F0E8;
+  --sidebar-foreground: #1A1A14;
+  --sidebar-primary: #6B7240;
+  --sidebar-primary-foreground: #FAF8F3;
+  --sidebar-accent: #F5F0E8;
+  --sidebar-accent-foreground: #1A1A14;
+  --sidebar-border: #E8E4DC;
+  --sidebar-ring: #6B7240;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-[#FAF8F3] text-[#1A1A14] font-[family-name:var(--font-montserrat)];
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Typographie globale style Oliviers */
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.heading-luxury {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.eyebrow-luxury {
+  font-family: var(--font-montserrat);
+  font-weight: 300;
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+/* Séparateur ornemental */
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  color: #6B7240;
+}
+.ornament::before,
+.ornament::after {
+  content: '';
+  height: 1px;
+  width: 2.5rem;
+  background: currentColor;
+  opacity: 0.5;
+}
+/* force rebuild Wed Apr 22 14:20:59 UTC 2026 */

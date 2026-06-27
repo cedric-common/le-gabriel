@@ -13,11 +13,11 @@ export type Housing = {
 const studioImages = [
   'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900&q=80',
   'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=900&q=80',
-  'https://images.unsplash.com/photo-1590490360182-c33d5771f501?w=900&q=80',
+  'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80',
   'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80',
   'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=80',
-  'https://images.unsplash.com/photo-1493663284040-bf0efef3ea86?w=900&q=80',
-  'https://images.unsplash.com/photo-1560448204-e02b686ab689?w=900&q=80',
+  'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=900&q=80',
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80',
   'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
   'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&q=80',
   'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=900&q=80',
@@ -27,15 +27,15 @@ const studioImages = [
 
 const aptImages = [
   'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900&q=80',
-  'https://images.unsplash.com/photo-1560448204-e02b686ab689?w=900&q=80',
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80',
   'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
-  'https://images.unsplash.com/photo-1493663284040-bf0efef3ea86?w=900&q=80',
+  'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=900&q=80',
   'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&q=80',
   'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=900&q=80',
   'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=900&q=80',
   'https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=900&q=80',
   'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=80',
-  'https://images.unsplash.com/photo-1502003148287-a82ef80a9a7b?w=900&q=80',
+  'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900&q=80',
   'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=80',
 ]
 

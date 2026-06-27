@@ -125,28 +125,28 @@ export const regionHighlights = [
     subtitle: 'Village authentique',
     description:
       'Située entre mer et montagne, Solenzara offre un cadre de vie préservé avec ses petits commerces, sa marina et ses plages.',
-    image: '/solenzara.jpg',
+    image: '/photos/solenzara.jpg',
   },
   {
     title: 'Plages de sable fin',
     subtitle: 'À quelques minutes',
     description:
       'Des plages paradisiaques comme Canella, Favone ou San Ciprianu accessibles à pied ou en vélo.',
-    image: '/plage-canella.jpg',
+    image: '/photos/plage-canella.jpg',
   },
   {
     title: 'Aiguilles de Bavella',
     subtitle: 'Randonnée & panorama',
     description:
       "Un site grandiose à 30 minutes : randonnées, via ferrata et vues à couper le souffle sur l'Alta Rocca.",
-    image: '/aiguilles_bavella.webp',
+    image: '/photos/aiguilles_bavella.webp',
   },
   {
     title: 'Rivière de Solenzara',
     subtitle: 'Baignade en eau douce',
     description:
       'Piscines naturelles et baignades rafraîchissantes au cœur des maquis corses.',
-    image: '/riviere-solenzara.jpg',
+    image: '/photos/riviere-solenzara.jpg',
   },
 ]
 

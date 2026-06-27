@@ -35,7 +35,7 @@ export default function Home() {
             titleLine1: 'Le Gabriel.',
             titleLine2: 'Votre séjour en Corse.',
             subtitle: '12 studios et 11 appartements au cœur de Solenzara',
-            imageUrl: '/hero-homepage.jpg',
+            imageUrl: '/photos/hero-homepage.jpg',
           }}
         />
 
@@ -140,7 +140,7 @@ export default function Home() {
         {/* CTA Réserver */}
         <section className="relative py-28 md:py-36 overflow-hidden">
           <img
-            src="/riviere-solenzara.jpg"
+            src="/photos/riviere-solenzara.jpg"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />

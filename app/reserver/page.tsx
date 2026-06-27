@@ -15,7 +15,7 @@ export default function ReserverPage() {
         <section className="relative h-[45vh] min-h-[380px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/plage-canella.jpg"
+              src="/photos/plage-canella.jpg"
               alt=""
               className="w-full h-full object-cover"
             />

@@ -17,7 +17,7 @@ export default function ContactPage() {
         <section className="relative h-[45vh] min-h-[380px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/riviere-solenzara.jpg"
+              src="/photos/riviere-solenzara.jpg"
               alt=""
               className="w-full h-full object-cover"
             />

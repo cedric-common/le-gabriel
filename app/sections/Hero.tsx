@@ -51,6 +51,7 @@ export function Hero({ data }: HeroProps) {
           alt=""
           className="w-full h-full object-cover object-center"
         />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/80 via-[#0D0D0A]/20 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0A]/30 to-transparent" />
       </motion.div>

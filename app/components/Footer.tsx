@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Instagram, Facebook } from 'lucide-react'
 
 function Logo({ className = '', variant = 'dark' }: { className?: string; variant?: 'light' | 'dark' }) {
-  const src = variant === 'light' ? '/logos/logo-blanc.png' : '/logos/logo-noir.png'
+  const src = variant === 'light' ? '/logos/logo-white.png' : '/logos/logo-noir.png'
   return <img src={src} alt="Le Gabriel" className={className} />
 }
 

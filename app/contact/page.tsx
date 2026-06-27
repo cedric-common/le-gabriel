@@ -2,6 +2,7 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { contactInfo } from '@/lib/data'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { ContactForm } from './ContactForm'
 
 export const metadata = {
   title: 'Contact · Le Gabriel',
@@ -16,7 +17,7 @@ export default function ContactPage() {
         <section className="relative h-[45vh] min-h-[380px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1920&q=80"
+              src="/riviere-solenzara.jpg"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -45,10 +46,12 @@ export default function ContactPage() {
                     <Mail className="w-4 h-4 text-[#6B7240] mt-1" strokeWidth={1.5} />
                     <p className="text-[0.85rem] font-[family-name:var(--font-montserrat)] text-[#1A1A14]/70">{contactInfo.email}</p>
                   </div>
+                  {contactInfo.phone && (
                   <div className="flex items-start gap-4">
                     <Phone className="w-4 h-4 text-[#6B7240] mt-1" strokeWidth={1.5} />
                     <p className="text-[0.85rem] font-[family-name:var(--font-montserrat)] text-[#1A1A14]/70">{contactInfo.phone}</p>
                   </div>
+                  )}
                   <div className="flex items-start gap-4">
                     <Clock className="w-4 h-4 text-[#6B7240] mt-1" strokeWidth={1.5} />
                     <p className="text-[0.85rem] font-[family-name:var(--font-montserrat)] text-[#1A1A14]/70">{contactInfo.hours}</p>
@@ -57,26 +60,7 @@ export default function ContactPage() {
               </div>
 
               {/* Formulaire */}
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60 mb-2">Nom</label>
-                  <input type="text" className="w-full bg-white border border-[#E8E4DC] px-4 py-3 text-[0.85rem] font-[family-name:var(--font-cormorant)] text-[#1A1A14] focus:outline-none focus:border-[#6B7240] transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60 mb-2">Email</label>
-                  <input type="email" className="w-full bg-white border border-[#E8E4DC] px-4 py-3 text-[0.85rem] font-[family-name:var(--font-cormorant)] text-[#1A1A14] focus:outline-none focus:border-[#6B7240] transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60 mb-2">Message</label>
-                  <textarea rows={5} className="w-full bg-white border border-[#E8E4DC] px-4 py-3 text-[0.85rem] font-[family-name:var(--font-cormorant)] text-[#1A1A14] focus:outline-none focus:border-[#6B7240] transition-colors resize-none" />
-                </div>
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-3 text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white bg-[#6B7240] hover:bg-[#1A1A14] px-10 py-4 transition-all duration-500"
-                >
-                  Envoyer
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </section>

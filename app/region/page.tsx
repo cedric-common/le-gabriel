@@ -16,7 +16,7 @@ export default function RegionPage() {
         <section className="relative h-[60vh] min-h-[450px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+              src="/solenzara.jpg"
               alt=""
               className="w-full h-full object-cover"
             />

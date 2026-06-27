@@ -16,7 +16,7 @@ export default function ServicesPage() {
         <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=80"
+              src="/photos/heroe-services.jpg"
               alt=""
               className="w-full h-full object-cover"
             />

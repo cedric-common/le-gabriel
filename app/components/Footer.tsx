@@ -12,7 +12,9 @@ const footerLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/appartements', label: 'Appartements' },
   { href: '/services', label: 'Services' },
+  { href: '/salle-de-sport', label: 'Salle de sport' },
   { href: '/region', label: 'La Région' },
+  { href: '/actualites', label: 'Actualités' },
   { href: '/reserver', label: 'Réserver' },
   { href: '/contact', label: 'Contact' },
 ]

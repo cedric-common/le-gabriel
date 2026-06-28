@@ -2,44 +2,12 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { FadeIn } from '../components/FadeIn'
 import Link from 'next/link'
+import { articles } from './data'
 
 export const metadata = {
   title: 'Actualités · Le Gabriel',
   description: 'Les dernières nouvelles de Le Gabriel, appart-hôtel à Solenzara.',
 }
-
-const articles = [
-  {
-    slug: 'ouverture-appart-hotel-solenzara',
-    category: 'Nouveauté',
-    date: '27 juin 2026',
-    title: "L'appart-hôtel Le Gabriel ouvre ses portes à Solenzara",
-    excerpt:
-      'Découvrez un nouveau concept d\'hébergement entre l\'intimité d\'un appartement et les services d\'un hôtel au cœur de la Corse.',
-    image:
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=80',
-  },
-  {
-    slug: 'guide-plages-solenzara',
-    category: 'Découverte',
-    date: '15 juin 2026',
-    title: 'Les plus belles plages autour de Solenzara',
-    excerpt:
-      'De Canella à Santa Giulia, embarquez pour un tour des criques de sable fin accessibles depuis votre appart-hôtel.',
-    image:
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80',
-  },
-  {
-    slug: 'nouvelle-salle-sport',
-    category: 'Bien-être',
-    date: '10 juin 2026',
-    title: 'Une salle de sport moderne au rez-de-chaussée',
-    excerpt:
-      'Cardio, musculation et cours collectifs : la nouvelle salle de sport Le Gabriel accueille résidents et visiteurs.',
-    image:
-      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80',
-  },
-]
 
 export default function ActualitesPage() {
   return (

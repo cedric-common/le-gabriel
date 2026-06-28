@@ -68,7 +68,7 @@ export function Hero({ data }: HeroProps) {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.3, ease }}
-              className="text-white/60 text-[0.6rem] tracking-[0.45em] uppercase font-[family-name:var(--font-montserrat)] font-normal mb-5"
+              className="text-white/80 text-[0.6rem] tracking-[0.45em] uppercase font-[family-name:var(--font-montserrat)] font-medium mb-5"
             >
               {eyebrow}
             </motion.p>
@@ -78,7 +78,7 @@ export function Hero({ data }: HeroProps) {
                 initial={{ y: '110%' }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1.3, delay: 0.5, ease }}
-                className="text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem] font-[family-name:var(--font-cormorant)] font-light text-white leading-[0.95] tracking-[0.08em] uppercase"
+                className="text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem] font-[family-name:var(--font-cormorant)] font-normal text-white leading-[0.95] tracking-[0.08em] uppercase"
               >
                 {titleLine1}
               </motion.h1>
@@ -88,7 +88,7 @@ export function Hero({ data }: HeroProps) {
                 initial={{ y: '110%' }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1.3, delay: 0.65, ease }}
-                className="text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem] font-[family-name:var(--font-cormorant)] font-light text-white leading-[0.95] tracking-[0.08em] uppercase italic"
+                className="text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem] font-[family-name:var(--font-cormorant)] font-normal text-white leading-[0.95] tracking-[0.08em] uppercase italic"
               >
                 {titleLine2}
               </motion.h1>
@@ -98,7 +98,7 @@ export function Hero({ data }: HeroProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.2, delay: 1, ease }}
-              className="text-white/50 text-[0.65rem] tracking-[0.3em] uppercase font-[family-name:var(--font-montserrat)] font-normal mb-10"
+              className="text-white/70 text-[0.65rem] tracking-[0.3em] uppercase font-[family-name:var(--font-montserrat)] font-medium mb-10"
             >
               {subtitle}
             </motion.p>
@@ -111,13 +111,13 @@ export function Hero({ data }: HeroProps) {
             >
               <button
                 onClick={() => scrollTo('domaine')}
-                className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white border border-white/40 hover:border-white hover:bg-white/10 px-8 py-3.5 transition-all duration-500"
+                className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium text-white border border-white/40 hover:border-white hover:bg-white/10 px-8 py-3.5 transition-all duration-500"
               >
                 Découvrir
               </button>
               <button
                 onClick={() => scrollTo('contact')}
-                className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white/60 hover:text-white transition-colors duration-300"
+                className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium text-white/60 hover:text-white transition-colors duration-300"
               >
                 Nous contacter
               </button>

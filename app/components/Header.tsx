@@ -72,7 +72,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-normal transition-all duration-300 ${
+                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
                     pathname === item.href ? textActive : textBase
                   }`}
                 >
@@ -95,7 +95,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-normal transition-all duration-300 ${
+                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
                     pathname === item.href ? textActive : textBase
                   }`}
                 >

@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { FadeIn } from '../components/FadeIn'
+import Image from 'next/image'
 import { regionHighlights } from '@/lib/data'
 
 export const metadata = {
@@ -15,10 +16,13 @@ export default function RegionPage() {
       <main>
         <section className="relative h-[60vh] min-h-[450px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/photos/solenzara.jpg"
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 via-[#0D0D0A]/20 to-transparent" />
           </div>
@@ -37,8 +41,8 @@ export default function RegionPage() {
             {regionHighlights.map((r, i) => (
               <FadeIn key={i} delay={0.1}>
                 <div className={`grid md:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                  <div className={`overflow-hidden aspect-[4/3] ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-                    <img src={r.image} alt={r.title} className="w-full h-full object-cover" />
+                  <div className={`relative overflow-hidden aspect-[4/3] ${i % 2 === 1 ? 'md:order-2' : ''}`}>
+                    <Image src={r.image} alt={r.title} fill unoptimized sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                   </div>
                   <div className={`${i % 2 === 1 ? 'md:order-1 md:text-right' : ''}`}>
                     <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-3">

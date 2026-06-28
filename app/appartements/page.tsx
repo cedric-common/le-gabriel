@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { FadeIn } from '../components/FadeIn'
+import Image from 'next/image'
 import { housings } from '@/lib/data'
 import { Users, BedDouble, Ruler } from 'lucide-react'
 
@@ -19,10 +20,13 @@ export default function AppartementsPage() {
       <main>
         <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
           <div className="absolute inset-0 scale-[1.05]">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80"
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 via-[#0D0D0A]/20 to-transparent" />
           </div>
@@ -50,8 +54,8 @@ export default function AppartementsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {studios.map((s, i) => (
                 <FadeIn key={s.id} delay={i * 0.05} className="bg-white group">
-                  <div className="overflow-hidden aspect-[4/3]">
-                    <img src={s.image} alt={s.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <Image src={s.image} alt={s.name} fill unoptimized sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-4 mb-3 text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60">
@@ -87,8 +91,8 @@ export default function AppartementsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {apts.map((a, i) => (
                 <FadeIn key={a.id} delay={i * 0.05} className="bg-[#FAF8F3] group">
-                  <div className="overflow-hidden aspect-[4/3]">
-                    <img src={a.image} alt={a.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <Image src={a.image} alt={a.name} fill unoptimized sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-4 mb-3 text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60">

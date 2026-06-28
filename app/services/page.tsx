@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { FadeIn } from '../components/FadeIn'
+import Image from 'next/image'
 import { services } from '@/lib/data'
 
 export const metadata = {
@@ -15,10 +16,13 @@ export default function ServicesPage() {
       <main>
         <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/photos/heroe-services.jpg"
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 via-[#0D0D0A]/20 to-transparent" />
           </div>

@@ -1,11 +1,12 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Instagram, Facebook } from 'lucide-react'
 
 function Logo({ className = '', variant = 'dark' }: { className?: string; variant?: 'light' | 'dark' }) {
   const src = variant === 'light' ? '/logos/logo-white.png' : '/logos/logo-noir.png'
-  return <img src={src} alt="Le Gabriel" className={className} />
+  return <Image src={src} alt="Le Gabriel" width={200} height={56} unoptimized className={className} />
 }
 
 const footerLinks = [
@@ -16,6 +17,7 @@ const footerLinks = [
   { href: '/actualites', label: 'Actualités' },
   { href: '/reserver', label: 'Réserver' },
   { href: '/contact', label: 'Contact' },
+  { href: '/mentions-legales', label: 'Mentions légales' },
 ]
 
 export function Footer() {

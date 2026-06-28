@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -40,24 +41,38 @@ export function Proprietaire({ data }: ProprietaireProps) {
       <div className="hidden md:block relative h-[85vh] overflow-hidden">
         <div className="grid grid-cols-2 h-full">
           <div className="overflow-hidden">
-            <motion.img
+            <motion.div
               initial={{ scale: 1.1 }}
               animate={isInView ? { scale: 1 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }}
-              src={photoLeftUrl}
-              alt="Domaine"
-              className="w-full h-full object-cover"
-            />
+              className="relative w-full h-full"
+            >
+              <Image
+                src={photoLeftUrl}
+                alt="Domaine"
+                fill
+                unoptimized
+                sizes="50vw"
+                className="object-cover"
+              />
+            </motion.div>
           </div>
           <div className="overflow-hidden">
-            <motion.img
+            <motion.div
               initial={{ scale: 1.1 }}
               animate={isInView ? { scale: 1 } : {}}
               transition={{ duration: 2, delay: 0.1, ease: 'easeOut' }}
-              src={photoRightUrl}
-              alt={name}
-              className="w-full h-full object-cover object-top"
-            />
+              className="relative w-full h-full"
+            >
+              <Image
+                src={photoRightUrl}
+                alt={name}
+                fill
+                unoptimized
+                sizes="50vw"
+                className="object-cover object-top"
+              />
+            </motion.div>
           </div>
         </div>
         <div className="absolute inset-0 bg-[#1A1A14]/25" />
@@ -98,14 +113,21 @@ export function Proprietaire({ data }: ProprietaireProps) {
           transition={{ duration: 1.5, ease }}
           className="h-[55vh] overflow-hidden"
         >
-          <motion.img
+          <motion.div
             initial={{ scale: 1.1 }}
             animate={isInView ? { scale: 1 } : {}}
             transition={{ duration: 2, ease: 'easeOut' }}
-            src={photoRightUrl}
-            alt={name}
-            className="w-full h-full object-cover object-top"
-          />
+            className="relative w-full h-full"
+          >
+            <Image
+              src={photoRightUrl}
+              alt={name}
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover object-top"
+            />
+          </motion.div>
         </motion.div>
 
         <motion.div

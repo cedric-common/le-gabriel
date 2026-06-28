@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 import { AnimatedCounter } from '../components/AnimatedCounter'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -102,10 +103,13 @@ export function Presentation({ data }: PresentationProps) {
           transition={{ duration: 1.5, ease }}
           className="relative h-[70vh] md:h-[80vh] overflow-hidden"
         >
-          <img
+          <Image
             src={mainImageUrl}
             alt="Vue sur la Corse"
-            className="w-full h-full object-cover"
+            fill
+            unoptimized
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-[#1A1A14]/20" />
         </motion.div>
@@ -176,10 +180,13 @@ export function Presentation({ data }: PresentationProps) {
             transition={{ duration: 1.5, delay: 0.2, ease }}
             className="relative h-[55vh] overflow-hidden"
           >
-            <img
+            <Image
               src={photo1Url}
               alt={photo1Label}
-              className="w-full h-full object-cover object-right md:object-center hover:scale-105 transition-transform duration-[2s] ease-out"
+              fill
+              unoptimized
+              sizes="50vw"
+              className="object-cover object-right md:object-center hover:scale-105 transition-transform duration-[2s] ease-out"
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#1A1A14]/60 to-transparent">
               <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white">{photo1Label}</p>
@@ -193,10 +200,13 @@ export function Presentation({ data }: PresentationProps) {
             transition={{ duration: 1.5, delay: 0.35, ease }}
             className="relative h-[55vh] overflow-hidden"
           >
-            <img
+            <Image
               src={photo2Url}
               alt={photo2Label}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s] ease-out"
+              fill
+              unoptimized
+              sizes="50vw"
+              className="object-cover hover:scale-105 transition-transform duration-[2s] ease-out"
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#1A1A14]/60 to-transparent">
               <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white">{photo2Label}</p>

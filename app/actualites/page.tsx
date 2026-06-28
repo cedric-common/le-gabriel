@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { FadeIn } from '../components/FadeIn'
+import Image from 'next/image'
 import Link from 'next/link'
 import { articles } from './data'
 
@@ -16,10 +17,13 @@ export default function ActualitesPage() {
       <main>
         <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=80"
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 via-[#0D0D0A]/20 to-transparent" />
           </div>
@@ -38,11 +42,14 @@ export default function ActualitesPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {articles.map((article, i) => (
                 <FadeIn key={article.slug} delay={i * 0.08} className="group bg-white">
-                  <div className="overflow-hidden aspect-[4/3]">
-                    <img
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <Image
                       src={article.image}
                       alt={article.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      fill
+                      unoptimized
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-6">

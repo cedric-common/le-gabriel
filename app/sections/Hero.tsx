@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -46,10 +47,14 @@ export function Hero({ data }: HeroProps) {
 
       {/* Background Parallax */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-[1.15]">
-        <img
+        <Image
           src={imageUrl}
           alt=""
-          className="w-full h-full object-cover object-center"
+          fill
+          unoptimized
+          sizes="100vw"
+          className="object-cover object-center"
+          priority
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/80 via-[#0D0D0A]/20 to-transparent" />

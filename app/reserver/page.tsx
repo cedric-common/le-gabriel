@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { ReserverForm } from './ReserverForm'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Réserver · Le Gabriel',
@@ -14,10 +15,13 @@ export default function ReserverPage() {
       <main>
         <section className="relative h-[45vh] min-h-[380px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/photos/plage-canella.jpg"
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 via-[#0D0D0A]/20 to-transparent" />
           </div>

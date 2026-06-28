@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
@@ -24,7 +25,7 @@ function Logo({
   variant?: 'light' | 'dark'
 }) {
   const src = variant === 'light' ? '/logos/logo-white.png' : '/logos/logo-noir.png'
-  return <img src={src} alt="Le Gabriel" className={className} />
+  return <Image src={src} alt="Le Gabriel" width={200} height={56} unoptimized className={className} />
 }
 
 export function Header() {

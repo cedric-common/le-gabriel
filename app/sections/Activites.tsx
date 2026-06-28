@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -101,10 +102,13 @@ export function Activites({ activities: activitiesData, surtitle, sectionTitle }
             className="group relative h-[55vh] overflow-hidden cursor-pointer"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <img
-              src={activity.imageUrl}
+            <Image
+              src={activity.imageUrl || ''}
               alt={activity.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
+              fill
+              unoptimized
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
             />
             <div className="absolute inset-0 bg-[#1A1A14]/40 group-hover:bg-[#1A1A14]/55 transition-colors duration-700" />
 

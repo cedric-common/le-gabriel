@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { contactInfo } from '@/lib/data'
+import Image from 'next/image'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 import { ContactForm } from './ContactForm'
 
@@ -16,10 +17,13 @@ export default function ContactPage() {
       <main>
         <section className="relative h-[45vh] min-h-[380px] flex items-end overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/photos/riviere-solenzara.jpg"
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              unoptimized
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 via-[#0D0D0A]/20 to-transparent" />
           </div>

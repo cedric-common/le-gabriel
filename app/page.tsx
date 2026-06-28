@@ -1,7 +1,8 @@
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Hero } from './sections/Hero'
-import { motion } from 'framer-motion'
+import { FadeIn } from './components/FadeIn'
+import Image from 'next/image'
 import Link from 'next/link'
 import { housings, services, regionHighlights } from '@/lib/data'
 import { ArrowRight } from 'lucide-react'
@@ -63,10 +64,13 @@ export default function Home() {
             <SectionTitle surtitle="Logements" title="Studios & Appartements" />
             <div className="grid md:grid-cols-2 gap-8">
               <div className="group relative overflow-hidden aspect-[4/3]">
-                <img
+                <Image
                   src={housings[0].image}
                   alt="Studios"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8">
@@ -76,10 +80,13 @@ export default function Home() {
                 <Link href="/appartements" className="absolute inset-0" />
               </div>
               <div className="group relative overflow-hidden aspect-[4/3]">
-                <img
+                <Image
                   src={housings[12].image}
                   alt="Appartements"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8">
@@ -125,7 +132,14 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8">
               {regionHighlights.slice(0, 2).map((r, i) => (
                 <Link key={i} href="/region" className="group block relative overflow-hidden aspect-[16/10]">
-                  <img src={r.image} alt={r.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <Image
+                    src={r.image}
+                    alt={r.title}
+                    fill
+                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/60 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-8">
                     <p className="text-white/60 text-[0.55rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] mb-1">{r.subtitle}</p>
@@ -137,12 +151,63 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Témoignages */}
+        <section className="bg-[#FAF8F3] py-24 md:py-32 border-t border-[#E8E4DC]">
+          <div className="max-w-6xl mx-auto px-6 lg:px-12">
+            <FadeIn>
+              <div className="mb-14 text-center">
+                <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-3">
+                  Témoignages
+                </p>
+                <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] tracking-wide uppercase">
+                  Ils ont séjourné au Gabriel
+                </h2>
+                <div className="mt-5 flex justify-center">
+                  <div className="h-px w-16 bg-[#6B7240]/40" />
+                </div>
+              </div>
+            </FadeIn>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  name: 'Marie & Jean, Paris',
+                  text: "Nous avons passé une semaine exceptionnelle. L'appartement était spacieux, propre et la terrasse offre une vue magnifique. La piscine et la salle de sport sont un vrai plus.",
+                },
+                {
+                  name: 'Antoine L., Lyon',
+                  text: "La situation est parfaite : à 10 minutes des plages, au calme. Didier et son équipe sont disponibles et de bons conseils. Nous reviendrons l'été prochain.",
+                },
+                {
+                  name: 'Famille D., Belgique',
+                  text: "Avec nos trois enfants, l'espace et le linge de maison inclus ont été appréciables. La cuisine équipée nous a permis de cuisiner des produits locaux. Excellente adresse !",
+                },
+              ].map((review, i) => (
+                <FadeIn key={i} delay={i * 0.1}>
+                  <div className="bg-white p-8 shadow-sm h-full flex flex-col">
+                    <div className="mb-4 text-[#6B7240] text-sm tracking-[0.15em]">★★★★★</div>
+                    <p className="flex-1 text-base font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed mb-6">
+                      &ldquo;{review.text}&rdquo;
+                    </p>
+                    <p className="text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]">
+                      {review.name}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA Réserver */}
         <section className="relative py-28 md:py-36 overflow-hidden">
-          <img
+          <Image
             src="/photos/riviere-solenzara.jpg"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            unoptimized
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-[#0D0D0A]/60" />
           <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">

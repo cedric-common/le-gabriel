@@ -6,8 +6,7 @@ export const articles = [
     title: "L'appart-hôtel Le Gabriel ouvre ses portes à Solenzara",
     excerpt:
       "Découvrez un nouveau concept d'hébergement entre l'intimité d'un appartement et les services d'un hôtel au cœur de la Corse.",
-    image:
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=80',
+    image: '/photos/solenzara.jpg',
     content: [
       "C'est avec une grande fierté que nous ouvrons les portes du Gabriel, un appart-hôtel pensé comme une maison d'hôtes contemporaine au cœur de Solenzara. Situé entre les plages de sable fin du Sud-Est corse et les montagnes de l'Alta Rocca, notre établissement propose un nouveau concept d'hébergement : l'intimité et l'espace d'un appartement, associés aux services attendus d'un hôtel.",
       "Le Gabriel compte 12 studios et 11 appartements d'une chambre, pouvant accueillir de 4 à 5 personnes. Chaque logement dispose d'une cuisine équipée, d'une connexion WiFi fibre, de la climatisation réversible, d'une terrasse ou d'un balcon, et d'un linge de maison complet. La décoration, sobre et élégante, puise dans les tonalités de la terre corse pour offrir un cadre chaleureux et apaisant.",
@@ -22,8 +21,7 @@ export const articles = [
     title: 'Les plus belles plages autour de Solenzara',
     excerpt:
       "De Canella à Santa Giulia, embarquez pour un tour des criques de sable fin accessibles depuis votre appart-hôtel.",
-    image:
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&q=80',
+    image: '/photos/plage-canella.jpg',
     content: [
       "Solenzara est une perle méconnue du littoral corse, idéale pour les amateurs de plages sauvages et de criques préservées. À seulement quelques minutes en voiture ou en vélo de l'appart-hôtel Le Gabriel, vous découvrirez des étendues de sable fin bordées d'eaux cristallines.",
       "La plage de Canella est sans doute la plus proche et aussi l'une des plus charmantes. Son sable doré, ombragé par les pins parasols, offre un cadre parfait pour les familles. Les eaux peu profondes et chaudes permettent de se baigner en toute sécurité, tandis que les fonds rocheux sur le côté invitent au snorkeling.",
@@ -39,7 +37,7 @@ export const articles = [
     excerpt:
       "Cardio, musculation et cours collectifs : la nouvelle salle de sport Le Gabriel accueille résidents et visiteurs.",
     image:
-      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=80',
+      'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80',
     content: [
       "Le Gabriel ne se contente pas d'offrir un hébergement de qualité : nous avons également pensé à votre bien-être physique. Notre salle de sport, située au rez-de-chaussée de l'appart-hôtel, est ouverte à la fois aux résidents et au public. Accessible en journée et en soirée, elle dispose d'équipements modernes et régulièrement entretenus.",
       "La zone cardio propose tapis de course, vélos elliptiques et rameurs, parfaits pour éliminer le stress après une journée de randonnée ou de plage. La zone musculation libre, elle, est équipée d'haltères, de bancs et de machines guidées pour travailler chaque groupe musculaire en toute sécurité.",

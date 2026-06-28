@@ -9,8 +9,9 @@ export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const article = articles.find((a) => a.slug === params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const article = articles.find((a) => a.slug === slug)
   if (!article) return { title: 'Article · Le Gabriel' }
   return {
     title: `${article.title} · Le Gabriel`,
@@ -18,14 +19,15 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   }
 }
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = articles.find((a) => a.slug === params.slug)
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const article = articles.find((a) => a.slug === slug)
   if (!article) {
     notFound()
   }
 
   const relatedArticles = articles
-    .filter((a) => a.slug !== params.slug)
+    .filter((a) => a.slug !== slug)
     .slice(0, 2)
 
   return (

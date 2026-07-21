@@ -3,56 +3,13 @@ import { Footer } from '../components/Footer'
 import { FadeIn } from '../components/FadeIn'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Users, BedDouble, Ruler, ArrowRight } from 'lucide-react'
+import { housingCategories, housingServices } from '@/lib/data'
+import { Users, BedDouble, Ruler, ArrowRight, Check } from 'lucide-react'
 
 export const metadata = {
   title: 'Appartements · Le Gabriel',
-  description: 'Découvrez nos studios et appartements 1 chambre à Solenzara.',
+  description: 'Découvrez nos 29 appartements contemporains à Sari-Solenzara : studios et appartements 1 chambre avec terrasse privative.',
 }
-
-type Category = {
-  title: string
-  count: string
-  guests: number
-  sizeFrom: number
-  beds: string
-  description: string
-  features: string[]
-  image: string
-}
-
-const categories: Category[] = [
-  {
-    title: 'Studios',
-    count: '12 logements',
-    guests: 4,
-    sizeFrom: 28,
-    beds: 'Lit double + canapé-lit',
-    description:
-      'Studios lumineux avec terrasse ou balcon, coin nuit séparé par un paravent, cuisine équipée et salle de douche. Idéal pour un couple ou une petite famille.',
-    features: ['Clim réversible', 'Cuisine équipée', 'TV', 'Wifi fibre', 'Terrasse / balcon', 'Linge de maison'],
-    image: '/photos/appart-studio.jpg',
-  },
-  {
-    title: 'Appartements 1 chambre',
-    count: '11 logements',
-    guests: 5,
-    sizeFrom: 45,
-    beds: 'Chambre lit double + salon canapé-lit 3pl',
-    description:
-      'Appartements spacieux avec chambre séparée, salon, cuisine américaine et grand balcon vue jardin ou piscine. Parfait pour les familles et les longs séjours.',
-    features: [
-      'Clim réversible',
-      'Cuisine équipée',
-      'TV',
-      'Wifi fibre',
-      'Grand balcon',
-      'Linge de maison',
-      'Espace de travail',
-    ],
-    image: '/photos/appart-T2.jpg',
-  },
-]
 
 export default function AppartementsPage() {
   return (
@@ -81,10 +38,30 @@ export default function AppartementsPage() {
           </div>
         </section>
 
+        {/* Intro */}
+        <section className="bg-white py-16 md:py-20 border-b border-[#E8E4DC]">
+          <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+            <FadeIn>
+              <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-4">
+                Des hébergements pensés pour votre confort
+              </p>
+              <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] uppercase tracking-wide mb-6">
+                29 appartements contemporains
+              </h2>
+              <p className="text-lg font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed">
+                Élégants et fonctionnels, tous nos appartements disposent d'équipements haut de gamme
+                et d'une grande terrasse privative avec vue côté mer ou côté village, pour profiter
+                pleinement de l'atmosphère unique de la côte orientale.
+              </p>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* 2 cards */}
         <section className="bg-[#FAF8F3] py-20 md:py-28">
           <div className="max-w-6xl mx-auto px-6 lg:px-12 space-y-12 md:space-y-16">
-            {categories.map((c, i) => (
-              <FadeIn key={c.title} delay={0.05 * i} className="bg-white group">
+            {housingCategories.map((c, i) => (
+              <FadeIn key={c.type} delay={0.05 * i} className="bg-white group">
                 <div
                   className={`grid md:grid-cols-2 items-stretch ${
                     i % 2 === 1 ? 'md:[&>*:first-child]:order-2' : ''
@@ -106,7 +83,7 @@ export default function AppartementsPage() {
                         {c.title}
                       </h2>
                       <span className="text-[0.6rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240]">
-                        {c.count}
+                        {c.count} logements
                       </span>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-5 text-[0.6rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60">
@@ -146,6 +123,42 @@ export default function AppartementsPage() {
                 </div>
               </FadeIn>
             ))}
+          </div>
+        </section>
+
+        {/* Services inclus */}
+        <section className="bg-white py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 lg:px-12">
+            <FadeIn>
+              <div className="text-center mb-14">
+                <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-3">
+                  À votre service
+                </p>
+                <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] tracking-wide uppercase">
+                  Pour un séjour sur mesure
+                </h2>
+                <div className="mt-5 flex justify-center">
+                  <div className="h-px w-16 bg-[#6B7240]/40" />
+                </div>
+              </div>
+            </FadeIn>
+            <div className="grid md:grid-cols-3 gap-8">
+              {housingServices.map((s, i) => (
+                <FadeIn key={s.title} delay={i * 0.08}>
+                  <div className="flex flex-col items-start">
+                    <div className="w-10 h-10 flex items-center justify-center border border-[#6B7240]/30 text-[#6B7240] rounded-full mb-4">
+                      <Check className="w-4 h-4" />
+                    </div>
+                    <h3 className="text-[0.8rem] tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14] mb-2">
+                      {s.title}
+                    </h3>
+                    <p className="text-base font-[family-name:var(--font-cormorant)] text-[#1A1A14]/60 font-light leading-relaxed">
+                      {s.description}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </section>
       </main>

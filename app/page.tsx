@@ -4,7 +4,7 @@ import { Hero } from './sections/Hero'
 import { FadeIn } from './components/FadeIn'
 import Image from 'next/image'
 import Link from 'next/link'
-import { housings, services, regionHighlights } from '@/lib/data'
+import { housingCategories, serviceCategories, regionHighlights } from '@/lib/data'
 import { ArrowRight } from 'lucide-react'
 
 export const revalidate = 60
@@ -32,10 +32,10 @@ export default function Home() {
       <main>
         <Hero
           data={{
-            eyebrow: 'Appart-Hôtel · Solenzara, Corse',
+            eyebrow: 'Appart-Hôtel · Sari-Solenzara, Corse',
             titleLine1: 'Le Gabriel.',
             titleLine2: 'Votre séjour en Corse.',
-            subtitle: '12 studios et 11 appartements au cœur de Solenzara',
+            subtitle: '29 appartements contemporains · Ouverture saison 2027',
             imageUrl: '/photos/hero-homepage.jpg',
           }}
         />
@@ -43,11 +43,17 @@ export default function Home() {
         {/* Intro */}
         <section id="domaine" className="bg-[#FAF8F3] py-24 md:py-32">
           <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
-            <SectionTitle surtitle="Bienvenue" title="Un art de vivre corse" />
-            <p className="text-[#1A1A14]/70 font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light leading-relaxed mb-8">
-              Niché au cœur de Solenzara, Le Gabriel vous propose 23 logements pensés pour le confort,
-              entre studios intimistes et appartements familiaux. Piscine chauffée, parking privé, à deux
-              pas des plages et des aiguilles de Bavella.
+            <SectionTitle surtitle="Bienvenue" title="Un art de vivre méditerranéen" />
+            <p className="text-[#1A1A14]/70 font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light leading-relaxed mb-6">
+              Au cœur du village de Sari-Solenzara, à seulement 3 minutes à pied du port de plaisance,
+              Le Gabriel vous accueille dans un cadre élégant et apaisant, entre mer et montagne.
+            </p>
+            <p className="text-[#1A1A14]/60 font-[family-name:var(--font-cormorant)] text-lg md:text-xl font-light leading-relaxed mb-8 italic">
+              L'indépendance d'un appartement alliée au confort et aux services d'un hôtel.
+            </p>
+            <p className="text-[#1A1A14]/70 font-[family-name:var(--font-cormorant)] text-lg md:text-xl font-light leading-relaxed mb-8">
+              29 appartements contemporains équipés pour des séjours courts ou longs, chacun avec
+              terrasse privative vue côté mer ou côté village.
             </p>
             <Link
               href="/appartements"
@@ -63,48 +69,36 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <SectionTitle surtitle="Logements" title="Studios & Appartements" />
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="group relative overflow-hidden aspect-[4/3]">
-                <Image
-                  src={housings[0].image}
-                  alt="Studios"
-                  fill
-                  unoptimized
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8">
-                  <p className="text-white/60 text-[0.55rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] mb-2">12 logements · jusqu'à 4 pers.</p>
-                  <h3 className="text-2xl font-[family-name:var(--font-cormorant)] text-white uppercase tracking-wide">Studios</h3>
+              {housingCategories.map((c, i) => (
+                <div key={c.type} className="group relative overflow-hidden aspect-[4/3]">
+                  <Image
+                    src={c.image}
+                    alt={c.title}
+                    fill
+                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-8">
+                    <p className="text-white/60 text-[0.55rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] mb-2">
+                      {c.count} logements · jusqu'à {c.guests} pers. · dès {c.sizeFrom} m²
+                    </p>
+                    <h3 className="text-2xl font-[family-name:var(--font-cormorant)] text-white uppercase tracking-wide">{c.title}</h3>
+                  </div>
+                  <Link href="/appartements" className="absolute inset-0" />
                 </div>
-                <Link href="/appartements" className="absolute inset-0" />
-              </div>
-              <div className="group relative overflow-hidden aspect-[4/3]">
-                <Image
-                  src={housings[12].image}
-                  alt="Appartements"
-                  fill
-                  unoptimized
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8">
-                  <p className="text-white/60 text-[0.55rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] mb-2">11 logements · jusqu'à 5 pers.</p>
-                  <h3 className="text-2xl font-[family-name:var(--font-cormorant)] text-white uppercase tracking-wide">Appartements 1 chambre</h3>
-                </div>
-                <Link href="/appartements" className="absolute inset-0" />
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Services teaser */}
+        {/* Bien-être teaser */}
         <section className="bg-[#FAF8F3] py-24 md:py-32">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <SectionTitle surtitle="Services" title="Pour un séjour sans souci" />
-            <div className="grid md:grid-cols-4 gap-8">
-              {services.slice(0, 4).map((s, i) => (
+            <SectionTitle surtitle="Espace détente & bien-être" title="Pour un séjour ressourçant" />
+            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
+              {serviceCategories[0].services.map((s, i) => (
                 <Link key={i} href="/services" className="text-center group">
                   <div className="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-[#6B7240]/30 text-[#6B7240] rounded-full group-hover:bg-[#6B7240] group-hover:text-white transition-all duration-500">
                     <span className="text-xs font-[family-name:var(--font-montserrat)] tracking-widest">0{i + 1}</span>

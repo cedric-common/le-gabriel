@@ -6,25 +6,32 @@ import Image from 'next/image'
 export const metadata = {
   title: 'Salle de sport · Le Gabriel',
   description:
-    'Salle de sport moderne à Solenzara, ouverte aux résidents et au public : cardio, musculation, cours collectifs.',
+    'Salle de sport moderne de 400 m² à Sari-Solenzara équipée Technogym : cardio, renforcement musculaire, coaching privé. Ouverte aux résidents et à la clientèle extérieure.',
 }
 
 const equipments = [
   {
     title: 'Cardio',
     description:
-      'Tapis de course, vélos elliptiques et rameurs pour des séances d\'endurance dans un espace lumineux et climatisé.',
+      'Équipements cardio Technogym dernière génération : tapis de course, vélos, rameurs, pour des séances d\'endurance dans un espace lumineux.',
   },
   {
-    title: 'Musculation libre',
+    title: 'Renforcement musculaire',
     description:
-      'Haltères, barres, bancs et postes guidés pour travailler chaque groupe musculaire en toute autonomie.',
+      'Postes guidés et espace poids libres Technogym pour travailler chaque groupe musculaire, du débutant au sportif confirmé.',
   },
   {
-    title: 'Cours collectifs',
+    title: 'Coaching privé',
     description:
-      'Séances encadrées de stretching, renforcement musculaire et café-gym selon un calendrier hebdomadaire.',
+      'Des coachings privés sur mesure, adaptés à vos objectifs et à votre niveau, proposés en supplément pour une expérience personnalisée.',
   },
+]
+
+const wellness = [
+  { title: 'Spa de nage', description: 'Prolongez votre séance dans le spa de nage intérieur.' },
+  { title: 'Hammam', description: 'Un moment de relaxation profonde après l\'effort.' },
+  { title: 'Sauna', description: 'Récupération et détente dans une chaleur sèche apaisante.' },
+  { title: 'Piscine extérieure', description: 'Piscine extérieure ouverte en saison.' },
 ]
 
 export default function SalleDeSportPage() {
@@ -62,13 +69,14 @@ export default function SalleDeSportPage() {
                   Présentation
                 </p>
                 <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] uppercase tracking-wide mb-6">
-                  Un espace fitness au rez-de-chaussée
+                  400 m² d'équipements Technogym
                 </h2>
                 <p className="text-lg font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed">
-                  La salle de sport du Gabriel est située au rez-de-chaussée de
-                  l\'appart-hôtel. Lumineuse et entièrement équipée, elle est
-                  accessible aux résidents de l\'établissement ainsi qu\'aux
-                  visiteurs extérieurs sur réservation.
+                  Au sein de notre appart'hôtel, découvrez une salle de sport moderne de 400 m² pensée
+                  pour offrir une expérience d'entraînement haut de gamme dans un cadre exceptionnel
+                  entre mer et montagne. Équipée des dernières technologies Technogym, notre espace
+                  fitness met à votre disposition des équipements premium dédiés au cardio, au
+                  renforcement musculaire, à la performance et au bien-être.
                 </p>
               </div>
             </FadeIn>
@@ -161,7 +169,44 @@ export default function SalleDeSportPage() {
           </div>
         </section>
 
+        {/* Espace détente */}
         <section className="bg-white py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 lg:px-12">
+            <FadeIn>
+              <div className="max-w-2xl mx-auto text-center mb-14">
+                <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-4">
+                  Prolongez l'expérience
+                </p>
+                <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] uppercase tracking-wide mb-6">
+                  Espace détente & récupération
+                </h2>
+                <p className="text-lg font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed">
+                  Dans une atmosphère élégante et contemporaine, profitez d'un lieu unique où sport,
+                  récupération et bien-être se rencontrent au cœur de Solenzara.
+                </p>
+              </div>
+            </FadeIn>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {wellness.map((w, i) => (
+                <FadeIn key={w.title} delay={i * 0.06}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-10 h-10 flex items-center justify-center border border-[#6B7240]/30 text-[#6B7240] rounded-full text-[0.6rem] tracking-widest font-[family-name:var(--font-montserrat)] mb-4">
+                      {String(i + 1).padStart(2, '0')}
+                    </div>
+                    <h3 className="text-[0.8rem] tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14] mb-2">
+                      {w.title}
+                    </h3>
+                    <p className="text-sm font-[family-name:var(--font-cormorant)] text-[#1A1A14]/60 font-light leading-relaxed">
+                      {w.description}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#FAF8F3] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 lg:px-12">
             <FadeIn>
               <div className="max-w-2xl mx-auto text-center">
@@ -172,10 +217,9 @@ export default function SalleDeSportPage() {
                   Comment nous trouver
                 </h2>
                 <p className="text-lg font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed mb-8">
-                  La salle de sport se trouve au rez-de-chaussée de
-                  l\'appart-hôtel Le Gabriel. Un parking privé est à votre
-                  disposition à l\'entrée de la résidence. Rendez-vous à
-                  l\'accueil pour votre première visite.
+                  Notre espace fitness est également ouvert à la clientèle extérieure. La salle de
+                  sport se trouve au sein de l'appart'hôtel Le Gabriel, au cœur du village de
+                  Sari-Solenzara. Un parking couvert sécurisé est à votre disposition.
                 </p>
                 <p className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] text-[#1A1A14]/60">
                   Le Gabriel · 20145 Solenzara · Corse

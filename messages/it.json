@@ -1,0 +1,465 @@
+{
+  "meta": {
+    "home": {
+      "title": "Le Gabriel | Aparthotel a Solenzara",
+      "description": "Aparthotel a Solenzara, in Corsica: 12 monolocali e 11 appartamenti con una camera, per 4 o 5 persone."
+    },
+    "appartements": {
+      "title": "Appartamenti · Le Gabriel",
+      "description": "Scoprite i nostri 29 appartamenti contemporanei a Sari-Solenzara: monolocali e appartamenti con una camera e terrazza privata."
+    },
+    "services": {
+      "title": "Servizi · Le Gabriel",
+      "description": "Piscina, spa di nuoto, hammam, sauna, palestra di 400 m², parcheggio sicuro e colonnine di ricarica a Sari-Solenzara."
+    },
+    "gym": {
+      "title": "Palestra · Le Gabriel",
+      "description": "Palestra moderna di 400 m² a Sari-Solenzara, attrezzata Technogym: cardio, potenziamento muscolare e coaching privato. Aperta ai residenti e agli ospiti esterni."
+    },
+    "region": {
+      "title": "La regione · Le Gabriel",
+      "description": "Solenzara, spiagge di sabbia fine, le Aiguilles de Bavella e i fiumi corsi."
+    },
+    "contact": {
+      "title": "Contatti · Le Gabriel",
+      "description": "Contattate Le Gabriel a Solenzara per le vostre prenotazioni e le vostre domande."
+    },
+    "reserver": {
+      "title": "Prenotare · Le Gabriel",
+      "description": "Prenotate il vostro monolocale o appartamento a Solenzara, in Corsica."
+    },
+    "legal": {
+      "title": "Note legali · Le Gabriel",
+      "description": "Note legali, informazioni sulla società SCI AZUR e condizioni d’uso del sito Le Gabriel."
+    },
+    "news": {
+      "title": "Attualità · Le Gabriel",
+      "description": "Le ultime notizie de Le Gabriel, aparthotel a Solenzara."
+    },
+    "articleFallback": "Articolo · Le Gabriel"
+  },
+  "nav": {
+    "appartements": "Appartamenti",
+    "services": "Servizi",
+    "salleDeSport": "Palestra",
+    "region": "La regione",
+    "actualites": "Attualità",
+    "reserver": "Prenotare",
+    "contact": "Contatti",
+    "mentions": "Note legali"
+  },
+  "common": {
+    "discover": "Scoprire",
+    "contactUs": "Contattaci",
+    "scroll": "Scorri",
+    "language": "Lingua",
+    "reserve": "Prenotare",
+    "housingStats": "{count} alloggi · fino a {guests} pers. · da {size} m²"
+  },
+  "home": {
+    "heroEyebrow": "Aparthotel · Sari-Solenzara, Corsica",
+    "heroTitle1": "Le Gabriel.",
+    "heroTitle2": "Il vostro soggiorno in Corsica.",
+    "heroSubtitle": "29 appartamenti contemporanei · Apertura stagione 2027",
+    "introSurtitle": "Benvenuti",
+    "introTitle": "Un’arte di vivere mediterranea",
+    "introP1": "Nel cuore del villaggio di Sari-Solenzara, a soli 3 minuti a piedi dal porto turistico, Le Gabriel vi accoglie in un contesto elegante e sereno, tra mare e montagna.",
+    "introP2": "L’indipendenza di un appartamento unita al comfort e ai servizi di un hotel.",
+    "introP3": "29 appartamenti contemporanei, attrezzati per soggiorni brevi o lunghi, ciascuno con terrazza privata vista mare o vista villaggio.",
+    "introCta": "Scoprire gli alloggi",
+    "housingSurtitle": "Alloggi",
+    "housingTitle": "Monolocali & Appartamenti",
+    "wellnessSurtitle": "Spazio relax e benessere",
+    "wellnessTitle": "Per un soggiorno rigenerante",
+    "allServices": "Tutti i servizi",
+    "regionSurtitle": "Dintorni",
+    "regionTitle": "Solenzara e i suoi tesori",
+    "reviewsSurtitle": "Testimonianze",
+    "reviewsTitle": "Hanno soggiornato al Gabriel",
+    "ctaSurtitle": "Prenotare il soggiorno",
+    "ctaTitle": "Pronti a vivere la Corsica?",
+    "ctaButton": "Prenotare ora",
+    "reviews": [
+      {
+        "name": "Marie & Jean, Paris",
+        "text": "Abbiamo passato una settimana straordinaria. L’appartamento era spazioso e impeccabile, e la terrazza offre una vista magnifica. La piscina e la palestra sono un vero plus."
+      },
+      {
+        "name": "Antoine L., Lyon",
+        "text": "La posizione è perfetta: a 10 minuti dalle spiagge, in piena tranquillità. Didier e la sua squadra sono disponibili e pieni di buoni consigli. Torneremo la prossima estate."
+      },
+      {
+        "name": "Famiglia D., Belgio",
+        "text": "Con i nostri tre bambini, lo spazio e la biancheria inclusa sono stati preziosi. La cucina attrezzata ci ha permesso di cucinare prodotti locali. Un indirizzo eccellente!"
+      }
+    ]
+  },
+  "housing": {
+    "studio": {
+      "title": "Monolocali",
+      "beds": "Letto matrimoniale 180×200 + divano letto",
+      "description": "Monolocali eleganti e contemporanei con terrazza privata vista mare o vista villaggio. Cucina completamente attrezzata, biancheria di alta qualità e doppi vetri per un comfort ottimale.",
+      "features": [
+        "Cucina completamente attrezzata",
+        "Aria condizionata",
+        "Ampia terrazza privata",
+        "Doppi vetri",
+        "Biancheria di alta qualità 180×200",
+        "Wi-Fi ad alta velocità gratuito",
+        "Televisione"
+      ]
+    },
+    "appartement": {
+      "title": "Appartamenti con una camera",
+      "beds": "Camera con letto matrimoniale 180×200 + divano letto in soggiorno",
+      "description": "Appartamenti spaziosi con camera separata, soggiorno, cucina completamente attrezzata e ampia terrazza privata vista mare o vista villaggio. Ideali per le famiglie e i soggiorni lunghi.",
+      "features": [
+        "Cucina completamente attrezzata",
+        "Aria condizionata",
+        "Ampia terrazza privata",
+        "Doppi vetri",
+        "Biancheria di alta qualità 180×200",
+        "Wi-Fi ad alta velocità gratuito",
+        "Televisione"
+      ]
+    }
+  },
+  "housingServices": [
+    {
+      "title": "Servizio di pulizia",
+      "description": "Servizio in camera quotidiano oppure solo all’inizio e alla fine del soggiorno, a vostra scelta."
+    },
+    {
+      "title": "Colazione in appartamento",
+      "description": "Servita nel vostro appartamento su richiesta, al momento della prenotazione o all’arrivo."
+    },
+    {
+      "title": "Accessibilità",
+      "description": "Appartamenti pensati per le persone con mobilità ridotta."
+    }
+  ],
+  "appartementsPage": {
+    "eyebrow": "I nostri alloggi",
+    "title": "Monolocali & Appartamenti",
+    "introSurtitle": "Alloggi pensati per il vostro comfort",
+    "introTitle": "29 appartamenti contemporanei",
+    "introText": "Eleganti e funzionali, tutti i nostri appartamenti dispongono di attrezzature di alto livello e di un’ampia terrazza privata con vista mare o vista villaggio, per vivere appieno l’atmosfera unica della costa orientale.",
+    "countLabel": "{count} alloggi",
+    "upToGuests": "Fino a {guests} pers.",
+    "fromSize": "A partire da {size} m²",
+    "servicesSurtitle": "Al vostro servizio",
+    "servicesTitle": "Per un soggiorno su misura"
+  },
+  "serviceCategories": [
+    {
+      "surtitle": "Relax e benessere",
+      "title": "Spazio relax e benessere",
+      "items": [
+        {
+          "title": "Piscina esterna",
+          "description": "Piscina esterna aperta in stagione, per godere del sole corso."
+        },
+        {
+          "title": "Spa di nuoto interna",
+          "description": "Spa di nuoto interna, accessibile tutto l’anno, per il relax e il benessere fisico."
+        },
+        {
+          "title": "Hammam",
+          "description": "Hammam per un momento di relax dopo una giornata di scoperte."
+        },
+        {
+          "title": "Sauna",
+          "description": "Sauna per una parentesi di benessere tra mare e montagna."
+        },
+        {
+          "title": "Palestra di 400 m²",
+          "description": "Palestra moderna di 400 m² attrezzata con le ultime tecnologie Technogym."
+        }
+      ]
+    },
+    {
+      "surtitle": "Per il vostro comfort",
+      "title": "Servizi e attrezzature",
+      "items": [
+        {
+          "title": "Parcheggio coperto e sicuro",
+          "description": "Parcheggio coperto e sicuro in loco per tutti i nostri ospiti."
+        },
+        {
+          "title": "Colonnine di ricarica elettrica",
+          "description": "Colonnine di ricarica per veicoli elettrici disponibili nel parcheggio."
+        },
+        {
+          "title": "Distributore bevande e snack",
+          "description": "Distributore automatico di bevande e snack accessibile 24 ore su 24."
+        },
+        {
+          "title": "Wi-Fi ad alta velocità gratuito",
+          "description": "Connessione Wi-Fi ad alta velocità gratuita in tutti gli alloggi e negli spazi comuni."
+        },
+        {
+          "title": "Servizio di pulizia",
+          "description": "Servizio in camera quotidiano oppure solo all’inizio e alla fine del soggiorno, a vostra scelta."
+        },
+        {
+          "title": "Colazione in appartamento",
+          "description": "Servita nel vostro appartamento su richiesta, al momento della prenotazione o all’arrivo."
+        },
+        {
+          "title": "Accessibilità",
+          "description": "Appartamenti pensati per le persone con mobilità ridotta."
+        }
+      ]
+    }
+  ],
+  "servicesPage": {
+    "eyebrow": "Comfort e attrezzature",
+    "title": "Servizi"
+  },
+  "regionItems": [
+    {
+      "title": "Sari-Solenzara",
+      "subtitle": "Villaggio autentico",
+      "description": "Nel cuore del villaggio di Sari-Solenzara, a soli 3 minuti a piedi dal porto turistico. Negozi, marina e spiagge vi aspettano."
+    },
+    {
+      "title": "Spiagge di sabbia fine",
+      "subtitle": "A pochi minuti",
+      "description": "Spiagge da sogno come Canella, Favone o San Ciprianu, raggiungibili a piedi o in bicicletta."
+    },
+    {
+      "title": "Aiguilles de Bavella",
+      "subtitle": "Escursioni e panorama",
+      "description": "Un sito grandioso a 30 minuti: passeggiate, via ferrata e vedute mozzafiato sull’Alta Rocca."
+    },
+    {
+      "title": "Fiume di Solenzara",
+      "subtitle": "Bagni in acqua dolce",
+      "description": "Piscine naturali e bagni rinfrescanti nel cuore della macchia corsa."
+    }
+  ],
+  "regionPage": {
+    "eyebrow": "Scoprire",
+    "title": "La regione"
+  },
+  "gym": {
+    "eyebrow": "Benessere",
+    "title": "Palestra",
+    "introSurtitle": "Presentazione",
+    "introTitle": "400 m² di attrezzature Technogym",
+    "introText": "All’interno del nostro aparthotel, scoprite una palestra moderna di 400 m² pensata per offrire un’esperienza di allenamento di alto livello, in un contesto eccezionale tra mare e montagna. Attrezzata con le ultime tecnologie Technogym, la nostra area fitness mette a vostra disposizione macchine premium dedicate al cardio, al potenziamento muscolare, alla performance e al benessere.",
+    "hoursSurtitle": "Orari",
+    "hoursTitle": "Orari di apertura",
+    "weekdays": "Lunedì — Venerdì",
+    "weekdaysHours": "6:00 — 22:00",
+    "weekend": "Sabato — Domenica",
+    "weekendHours": "8:00 — 20:00",
+    "ratesSurtitle": "Tariffe",
+    "ratesTitle": "Accesso e abbonamenti",
+    "residents": "Residenti Le Gabriel",
+    "free": "Gratuito",
+    "dayPass": "Giornaliero — pubblico",
+    "dayPrice": "15 €",
+    "monthly": "Abbonamento mensile",
+    "monthlyPrice": "39 €/mese",
+    "wellnessSurtitle": "Prolungate l’esperienza",
+    "wellnessTitle": "Spazio relax e recupero",
+    "wellnessText": "In un’atmosfera elegante e contemporanea, godetevi un luogo unico dove sport, recupero e benessere si incontrano nel cuore di Solenzara.",
+    "accessSurtitle": "Accesso",
+    "accessTitle": "Come trovarci",
+    "accessText": "Il nostro spazio fitness è aperto anche agli ospiti esterni. La palestra si trova all’interno dell’aparthotel Le Gabriel, nel cuore del villaggio di Sari-Solenzara. Un parcheggio coperto e sicuro è a vostra disposizione.",
+    "addressLine": "Le Gabriel · 20145 Solenzara · Corsica",
+    "equipments": [
+      {
+        "title": "Cardio",
+        "description": "Attrezzature cardio Technogym di ultima generazione: tapis roulant, biciclette, vogatori, per sessioni di endurance in uno spazio luminoso."
+      },
+      {
+        "title": "Potenziamento muscolare",
+        "description": "Postazioni guidate e area pesi liberi Technogym per lavorare ogni gruppo muscolare, dal principiante all’atleta esperto."
+      },
+      {
+        "title": "Coaching privato",
+        "description": "Coaching privati su misura, adatti ai vostri obiettivi e al vostro livello, proposti in supplemento per un’esperienza personalizzata."
+      }
+    ],
+    "wellnessItems": [
+      {
+        "title": "Spa di nuoto",
+        "description": "Prolungate la sessione nella spa di nuoto interna."
+      },
+      {
+        "title": "Hammam",
+        "description": "Un momento di relax profondo dopo lo sforzo."
+      },
+      {
+        "title": "Sauna",
+        "description": "Recupero e riposo in un calore secco e avvolgente."
+      },
+      {
+        "title": "Piscina esterna",
+        "description": "Piscina esterna aperta in stagione."
+      }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Restiamo in contatto",
+    "title": "Contatti",
+    "heading": "Le Gabriel",
+    "hours": "Apertura stagione 2027",
+    "faqTitle": "Domande frequenti"
+  },
+  "reserverPage": {
+    "eyebrow": "Il vostro soggiorno",
+    "title": "Prenotare",
+    "faqTitle": "Domande frequenti"
+  },
+  "faq": [
+    {
+      "question": "Quali sono gli orari di arrivo e di partenza?",
+      "answer": "L’arrivo è a partire dalle 15:00 e la partenza prima delle 11:00. In caso di arrivo anticipato o di partenza tardiva, vi preghiamo di contattarci: faremo del nostro meglio in base alla disponibilità."
+    },
+    {
+      "question": "Gli animali sono ammessi?",
+      "answer": "Gli animali domestici sono ammessi su richiesta preventiva, con un supplemento di pulizia di 30 €. Vi preghiamo di informarci al momento della prenotazione."
+    },
+    {
+      "question": "La biancheria è fornita?",
+      "answer": "Sì, lenzuola, asciugamani e strofinacci sono forniti e rinnovati ogni settimana per i soggiorni di più di 7 notti."
+    },
+    {
+      "question": "C’è un parcheggio in loco?",
+      "answer": "Sì, un parcheggio privato e sicuro è a disposizione di tutti i nostri ospiti senza costi aggiuntivi."
+    },
+    {
+      "question": "Come modificare o annullare la prenotazione?",
+      "answer": "Potete modificare o annullare la prenotazione fino a 14 giorni prima dell’arrivo per un rimborso integrale. Oltre questo termine, il soggiorno resta dovuto salvo circostanze eccezionali. Contattateci direttamente a contact@legabriel.fr."
+    },
+    {
+      "question": "La palestra è inclusa?",
+      "answer": "L’accesso alla palestra è gratuito per tutti i residenti. I visitatori esterni possono usufruirne con un pass giornaliero a 15 €."
+    }
+  ],
+  "contactForm": {
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "submit": "Inviare",
+    "thanksTitle": "Grazie!",
+    "thanksText": "Abbiamo ricevuto il vostro messaggio e vi risponderemo al più presto."
+  },
+  "bookingForm": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Telefono",
+    "arrival": "Arrivo",
+    "departure": "Partenza",
+    "guests": "Ospiti",
+    "housingType": "Tipo di alloggio desiderato",
+    "studio": "Monolocale",
+    "apartment": "Appartamento con una camera",
+    "either": "Indifferente",
+    "message": "Messaggio",
+    "submit": "Inviare la richiesta",
+    "thanksTitle": "Grazie!",
+    "thanksText": "Abbiamo ricevuto la vostra richiesta di prenotazione e vi contatteremo al più presto per confermare disponibilità e tariffe."
+  },
+  "legal": {
+    "eyebrow": "Informazioni legali",
+    "title": "Note legali",
+    "publisherTitle": "Editore del sito",
+    "nameLabel": "Denominazione:",
+    "nameValue": "SCI AZUR (S.C.I AZUR)",
+    "formLabel": "Forma giuridica:",
+    "formValue": "SCI, société civile immobilière (società civile immobiliare francese)",
+    "sirenLabel": "SIREN:",
+    "sirenValue": "451 528 913",
+    "siretLabel": "SIRET della sede:",
+    "siretValue": "451 528 913 00010",
+    "vatLabel": "Partita IVA intracomunitaria:",
+    "vatValue": "FR84 451 528 913",
+    "rcsLabel": "RCS:",
+    "rcsValue": "iscritta presso il registro di Ajaccio il 05/01/2004",
+    "rcsNumberLabel": "Numero RCS:",
+    "rcsNumberValue": "451 528 913 R.C.S. Ajaccio",
+    "capitalLabel": "Capitale sociale:",
+    "capitalValue": "1 525,00 €",
+    "directorLabel": "Amministratore:",
+    "directorValue": "Didier Gulli, gérant",
+    "hqLabel": "Sede legale:",
+    "hqValue": "Solenzara, Résidence Belle Image, 20145 Sari Solenzara",
+    "nafLabel": "Codice NAF/APE:",
+    "nafValue": "68.20B (Locazione di terreni e di altri beni immobili)",
+    "createdLabel": "Data di costituzione:",
+    "createdValue": "23/12/2003",
+    "publicationTitle": "Direttore della pubblicazione",
+    "publicationText": "Didier Gulli, gérant della SCI AZUR.",
+    "hostingTitle": "Hosting",
+    "hostingText": "Vercel Inc., 340 S Lemon Ave, Walnut, CA 91789, USA.",
+    "privacyTitle": "Dati personali",
+    "privacyP1": "La SCI AZUR si impegna a rispettare la riservatezza delle informazioni personali raccolte sul sito.",
+    "privacyContactLabel": "Referente per la protezione dei dati / contatto:",
+    "privacyPurposesLabel": "Finalità dei trattamenti:",
+    "privacyPurposes": "gestione delle prenotazioni, relazione con gli ospiti e, se del caso, misurazione dell’audience subordinata al vostro consenso.",
+    "privacyRights": "Avete il diritto di accesso, di rettifica, di opposizione e di cancellazione dei dati che vi riguardano. Per esercitare questi diritti, inviate la richiesta a contact@legabriel.fr.",
+    "cookiesTitle": "Cookie",
+    "cookiesText": "Il sito utilizza cookie tecnici necessari al suo funzionamento e cookie di misurazione dell’audience tramite Vercel Analytics. Nessun cookie pubblicitario di terze parti viene depositato senza il vostro consenso esplicito. Potete modificare le vostre preferenze in qualsiasi momento contattando contact@legabriel.fr.",
+    "ipTitle": "Proprietà intellettuale",
+    "ipText": "Tutti i contenuti presenti su questo sito (testi, fotografie, illustrazioni, loghi, identità visiva) sono di proprietà esclusiva della SCI AZUR, salvo i crediti Unsplash indicati. Qualsiasi riproduzione, rappresentazione, modifica o adattamento, totale o parziale, senza previa autorizzazione scritta è rigorosamente vietata.",
+    "creditsTitle": "Crediti",
+    "creditsText": "Progettazione e sviluppo: Comm’On Agency."
+  },
+  "news": {
+    "eyebrow": "Restate informati",
+    "title": "Attualità",
+    "readMore": "Leggi di più",
+    "related": "Da leggere anche"
+  },
+  "articles": {
+    "ouverture-appart-hotel-solenzara": {
+      "category": "Novità",
+      "date": "27 giugno 2026",
+      "title": "L’aparthotel Le Gabriel apre le porte a Solenzara",
+      "excerpt": "Scoprite un nuovo concetto di ospitalità, tra l’intimità di un appartamento e i servizi di un hotel, nel cuore della Corsica.",
+      "content": [
+        "È con grande orgoglio che apriamo le porte de Le Gabriel, un aparthotel pensato come una casa per ospiti contemporanea nel cuore di Solenzara. Situato tra le spiagge di sabbia fine del sud-est corso e le montagne dell’Alta Rocca, la nostra struttura propone un nuovo concetto di soggiorno: l’intimità e lo spazio di un appartamento, uniti ai servizi che ci si aspetta da un hotel.",
+        "Le Gabriel conta 12 monolocali e 11 appartamenti con una camera, che possono accogliere da 4 a 5 persone. Ogni alloggio dispone di una cucina attrezzata, di una connessione Wi-Fi in fibra, di climatizzazione reversibile, di una terrazza o di un balcone e di biancheria completa. L’arredo, sobrio ed elegante, trae ispirazione dalle tonalità della terra corsa per offrire un ambiente caldo e sereno.",
+        "Oltre agli alloggi, abbiamo immaginato spazi comuni accoglienti: una piscina riscaldata circondata da un giardino mediterraneo, un parcheggio privato e sicuro e una palestra moderna al piano terra, aperta ai residenti e al pubblico. Il nostro team resta a disposizione per organizzare il vostro arrivo, consigliarvi sulla regione e semplificare ogni momento del soggiorno.",
+        "Solenzara si rivela un punto di partenza ideale per esplorare la Corsica. Spiagge da sogno, piscine naturali del fiume, Aiguilles de Bavella e villaggi dell’Alta Rocca sono raggiungibili in pochi minuti. Che veniate per il riposo, le escursioni o la scoperta gastronomica, Le Gabriel vi offre un pied-à-terre raffinato, al ritmo dell’isola."
+      ]
+    },
+    "guide-plages-solenzara": {
+      "category": "Scoperta",
+      "date": "15 giugno 2026",
+      "title": "Le più belle spiagge intorno a Solenzara",
+      "excerpt": "Da Canella a Santa Giulia, un itinerario tra calette di sabbia fine raggiungibili dal vostro aparthotel.",
+      "content": [
+        "Solenzara è una perla ancora poco nota del litorale corso, ideale per chi ama le spiagge selvagge e le calette protette. A pochi minuti in auto o in bicicletta dall’aparthotel Le Gabriel, scoprirete distese di sabbia fine bagnate da acque cristalline.",
+        "La spiaggia di Canella è forse la più vicina, e anche una delle più incantevoli. La sua sabbia dorata, ombreggiata dai pini domestici, è perfetta per le famiglie. Le acque basse e calde permettono di nuotare in tutta sicurezza, mentre i fondali rocciosi sul lato invitano allo snorkeling.",
+        "Più a sud, la spiaggia di Favone sorprende per un’atmosfera al tempo stesso vivace e naturale. I piccoli ristoranti sulla spiaggia servono grigliate di pesce fresco e specialità corse con i piedi nella sabbia. Per chi ama camminare, il sentiero costiero che la costeggia apre panorami spettacolari sulle Aiguilles de Bavella.",
+        "Santa Giulia, più avanti verso Porto-Vecchio, merita anch’essa una gita. La sua laguna dai riflessi turchesi è una delle più fotografate della Corsica. E non dimenticate le piscine naturali del fiume di Solenzara: bagni rinfrescanti nel cuore della macchia, a due passi dal villaggio. In estate diventano l’appuntamento preferito degli abitanti e dei nostri ospiti."
+      ]
+    },
+    "nouvelle-salle-sport": {
+      "category": "Benessere",
+      "date": "10 giugno 2026",
+      "title": "Una palestra moderna al piano terra",
+      "excerpt": "Cardio, muscolazione e corsi collettivi: la nuova palestra Le Gabriel accoglie residenti e visitatori.",
+      "content": [
+        "Le Gabriel non si limita a offrire un alloggio di qualità: abbiamo pensato anche al vostro benessere fisico. La nostra palestra, situata al piano terra dell’aparthotel, è aperta sia ai residenti sia al pubblico. Accessibile di giorno e di sera, dispone di attrezzature moderne e regolarmente manutenute.",
+        "La zona cardio propone tapis roulant, cyclette ellittiche e vogatori, ideali per scaricare lo stress dopo una giornata di escursioni o di spiaggia. La zona pesi liberi è attrezzata con manubri, panchine e macchine guidate per lavorare ogni gruppo muscolare in tutta sicurezza.",
+        "Organiziamo anche corsi collettivi guidati da coach certificati: yoga all’aperto sulla terrazza al mattino, circuit training il martedì e il giovedì, e stretching il sabato pomeriggio. I residenti beneficiano di un accesso gratuito alla palestra e di una tariffa preferenziale sui corsi.",
+        "I visitatori esterni possono usufruire dello spazio con un pass giornaliero a 15 € o un abbonamento mensile a 39 €. Parcheggio e spogliatoi sono a disposizione. In vacanza o abitanti della zona, la palestra de Le Gabriel vi accoglie in un ambiente elegante e motivante, con vista sul giardino mediterraneo."
+      ]
+    }
+  },
+  "cookies": {
+    "text": "Questo sito utilizza i cookie per migliorare la vostra esperienza e misurare l’audience.",
+    "decline": "Continuare senza accettare",
+    "accept": "Accettare tutto"
+  },
+  "footer": {
+    "location": "Solenzara · Corsica · contact@legabriel.fr"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "meta": {
+    "home": {
+      "title": "Le Gabriel | Aparthotel in Solenzara",
+      "description": "Aparthotel in Solenzara, Corsica: 12 studios and 11 one-bedroom apartments for 4 to 5 guests."
+    },
+    "appartements": {
+      "title": "Apartments · Le Gabriel",
+      "description": "Discover our 29 contemporary apartments in Sari-Solenzara: studios and one-bedroom apartments with a private terrace."
+    },
+    "services": {
+      "title": "Services · Le Gabriel",
+      "description": "Swimming pool, indoor swim spa, hammam, sauna, 400 m² gym, secure parking and EV charging in Sari-Solenzara."
+    },
+    "gym": {
+      "title": "Gym · Le Gabriel",
+      "description": "A modern 400 m² Technogym-equipped gym in Sari-Solenzara: cardio, strength training and private coaching. Open to residents and outside guests."
+    },
+    "region": {
+      "title": "The Region · Le Gabriel",
+      "description": "Solenzara, fine sandy beaches, the Aiguilles de Bavella and Corsican rivers."
+    },
+    "contact": {
+      "title": "Contact · Le Gabriel",
+      "description": "Get in touch with Le Gabriel in Solenzara for bookings and enquiries."
+    },
+    "reserver": {
+      "title": "Book · Le Gabriel",
+      "description": "Book your studio or apartment in Solenzara, Corsica."
+    },
+    "legal": {
+      "title": "Legal notice · Le Gabriel",
+      "description": "Legal notice, information about SCI AZUR and terms of use of the Le Gabriel website."
+    },
+    "news": {
+      "title": "News · Le Gabriel",
+      "description": "The latest news from Le Gabriel, an aparthotel in Solenzara."
+    },
+    "articleFallback": "Article · Le Gabriel"
+  },
+  "nav": {
+    "appartements": "Apartments",
+    "services": "Services",
+    "salleDeSport": "Gym",
+    "region": "The Region",
+    "actualites": "News",
+    "reserver": "Book",
+    "contact": "Contact",
+    "mentions": "Legal notice"
+  },
+  "common": {
+    "discover": "Discover",
+    "contactUs": "Contact us",
+    "scroll": "Scroll",
+    "language": "Language",
+    "reserve": "Book",
+    "housingStats": "{count} units · up to {guests} guests · from {size} m²"
+  },
+  "home": {
+    "heroEyebrow": "Aparthotel · Sari-Solenzara, Corsica",
+    "heroTitle1": "Le Gabriel.",
+    "heroTitle2": "Your stay in Corsica.",
+    "heroSubtitle": "29 contemporary apartments · Opening for the 2027 season",
+    "introSurtitle": "Welcome",
+    "introTitle": "A Mediterranean way of life",
+    "introP1": "In the heart of the village of Sari-Solenzara, just a three-minute walk from the marina, Le Gabriel welcomes you into an elegant, peaceful setting between sea and mountains.",
+    "introP2": "The independence of an apartment, together with the comfort and services of a hotel.",
+    "introP3": "29 contemporary apartments, equipped for short or long stays, each with a private terrace facing the sea or the village.",
+    "introCta": "Discover the apartments",
+    "housingSurtitle": "Accommodations",
+    "housingTitle": "Studios & Apartments",
+    "wellnessSurtitle": "Relaxation & wellness",
+    "wellnessTitle": "A stay to restore you",
+    "allServices": "All services",
+    "regionSurtitle": "Surroundings",
+    "regionTitle": "Solenzara and its treasures",
+    "reviewsSurtitle": "Guest voices",
+    "reviewsTitle": "They stayed at Le Gabriel",
+    "ctaSurtitle": "Book your stay",
+    "ctaTitle": "Ready to experience Corsica?",
+    "ctaButton": "Book now",
+    "reviews": [
+      {
+        "name": "Marie & Jean, Paris",
+        "text": "We spent an exceptional week. The apartment was spacious and spotless, and the terrace offers a magnificent view. The pool and the gym are a real bonus."
+      },
+      {
+        "name": "Antoine L., Lyon",
+        "text": "The setting is perfect: ten minutes from the beaches, and wonderfully quiet. Didier and his team are attentive and full of good advice. We will be back next summer."
+      },
+      {
+        "name": "The D. family, Belgium",
+        "text": "With our three children, the space and the included household linen made all the difference. The fitted kitchen allowed us to cook with local produce. An excellent address!"
+      }
+    ]
+  },
+  "housing": {
+    "studio": {
+      "title": "Studios",
+      "beds": "Double bed 180×200 + sofa bed",
+      "description": "Elegant, contemporary studios with a private terrace facing the sea or the village. Fully equipped kitchen, premium bedding and double glazing for the finest comfort.",
+      "features": [
+        "Fully equipped kitchen",
+        "Air conditioning",
+        "Large private terrace",
+        "Double glazing",
+        "Premium 180×200 bedding",
+        "Free high-speed Wi-Fi",
+        "Television"
+      ]
+    },
+    "appartement": {
+      "title": "One-bedroom apartments",
+      "beds": "Bedroom with 180×200 double bed + living-room sofa bed",
+      "description": "Spacious apartments with a separate bedroom, living room, fully equipped kitchen and a large private terrace facing the sea or the village. Ideal for families and longer stays.",
+      "features": [
+        "Fully equipped kitchen",
+        "Air conditioning",
+        "Large private terrace",
+        "Double glazing",
+        "Premium 180×200 bedding",
+        "Free high-speed Wi-Fi",
+        "Television"
+      ]
+    }
+  },
+  "housingServices": [
+    {
+      "title": "Housekeeping",
+      "description": "Daily housekeeping, or only at the beginning and end of your stay — as you prefer."
+    },
+    {
+      "title": "Breakfast in your apartment",
+      "description": "Served in your apartment on request, when you book or upon arrival."
+    },
+    {
+      "title": "Accessibility",
+      "description": "Apartments designed for guests with reduced mobility."
+    }
+  ],
+  "appartementsPage": {
+    "eyebrow": "Our accommodations",
+    "title": "Studios & Apartments",
+    "introSurtitle": "Thoughtfully designed for your comfort",
+    "introTitle": "29 contemporary apartments",
+    "introText": "Elegant and practical, every apartment offers high-end amenities and a large private terrace looking towards the sea or the village, so you can fully enjoy the unique atmosphere of the east coast.",
+    "countLabel": "{count} units",
+    "upToGuests": "Up to {guests} guests",
+    "fromSize": "From {size} m²",
+    "servicesSurtitle": "At your service",
+    "servicesTitle": "A stay tailored to you"
+  },
+  "serviceCategories": [
+    {
+      "surtitle": "Relaxation & wellness",
+      "title": "Relaxation & wellness",
+      "items": [
+        {
+          "title": "Outdoor pool",
+          "description": "An outdoor pool open in season, to enjoy the Corsican sun."
+        },
+        {
+          "title": "Indoor swim spa",
+          "description": "An indoor swim spa, accessible all year round, for relaxation and fitness."
+        },
+        {
+          "title": "Hammam",
+          "description": "A hammam for a moment of relaxation after a day of discovery."
+        },
+        {
+          "title": "Sauna",
+          "description": "A sauna — a wellness pause between sea and mountains."
+        },
+        {
+          "title": "400 m² gym",
+          "description": "A modern 400 m² gym equipped with the latest Technogym technology."
+        }
+      ]
+    },
+    {
+      "surtitle": "For your comfort",
+      "title": "Services & amenities",
+      "items": [
+        {
+          "title": "Secure covered parking",
+          "description": "Covered, secure parking on site for all our guests."
+        },
+        {
+          "title": "Electric vehicle charging",
+          "description": "EV charging points available in the car park."
+        },
+        {
+          "title": "Drinks & snacks vending",
+          "description": "A drinks and snacks vending machine, accessible 24 hours a day."
+        },
+        {
+          "title": "Free high-speed Wi-Fi",
+          "description": "Free high-speed Wi-Fi in every apartment and throughout the shared spaces."
+        },
+        {
+          "title": "Housekeeping",
+          "description": "Daily housekeeping, or only at the beginning and end of your stay — as you prefer."
+        },
+        {
+          "title": "Breakfast in your apartment",
+          "description": "Served in your apartment on request, when you book or upon arrival."
+        },
+        {
+          "title": "Accessibility",
+          "description": "Apartments designed for guests with reduced mobility."
+        }
+      ]
+    }
+  ],
+  "servicesPage": {
+    "eyebrow": "Comfort & amenities",
+    "title": "Services"
+  },
+  "regionItems": [
+    {
+      "title": "Sari-Solenzara",
+      "subtitle": "An authentic village",
+      "description": "In the heart of the village of Sari-Solenzara, just a three-minute walk from the marina. Local shops, the marina and the beaches await you."
+    },
+    {
+      "title": "Fine sandy beaches",
+      "subtitle": "A few minutes away",
+      "description": "Idyllic beaches such as Canella, Favone or San Ciprianu, reachable on foot or by bicycle."
+    },
+    {
+      "title": "Aiguilles de Bavella",
+      "subtitle": "Hiking & panorama",
+      "description": "A spectacular site 30 minutes away: walks, via ferrata and breathtaking views over the Alta Rocca."
+    },
+    {
+      "title": "Solenzara river",
+      "subtitle": "Freshwater swimming",
+      "description": "Natural pools and refreshing swims in the heart of the Corsican maquis."
+    }
+  ],
+  "regionPage": {
+    "eyebrow": "Explore",
+    "title": "The region"
+  },
+  "gym": {
+    "eyebrow": "Wellness",
+    "title": "Gym",
+    "introSurtitle": "Overview",
+    "introTitle": "400 m² of Technogym equipment",
+    "introText": "Within our aparthotel, discover a modern 400 m² gym designed to offer a high-end training experience in an exceptional setting between sea and mountains. Equipped with the latest Technogym technology, our fitness space provides premium machines dedicated to cardio, strength training, performance and well-being.",
+    "hoursSurtitle": "Hours",
+    "hoursTitle": "Opening hours",
+    "weekdays": "Monday — Friday",
+    "weekdaysHours": "6am — 10pm",
+    "weekend": "Saturday — Sunday",
+    "weekendHours": "8am — 8pm",
+    "ratesSurtitle": "Rates",
+    "ratesTitle": "Access & memberships",
+    "residents": "Le Gabriel residents",
+    "free": "Complimentary",
+    "dayPass": "Day pass — public",
+    "dayPrice": "15 €",
+    "monthly": "Monthly membership",
+    "monthlyPrice": "39 €/month",
+    "wellnessSurtitle": "Extend the experience",
+    "wellnessTitle": "Recovery & relaxation",
+    "wellnessText": "In an elegant, contemporary atmosphere, enjoy a unique place where sport, recovery and well-being meet in the heart of Solenzara.",
+    "accessSurtitle": "Getting here",
+    "accessTitle": "How to find us",
+    "accessText": "Our fitness space is also open to outside guests. The gym is located within the Le Gabriel aparthotel, in the heart of the village of Sari-Solenzara. Secure covered parking is available.",
+    "addressLine": "Le Gabriel · 20145 Solenzara · Corsica",
+    "equipments": [
+      {
+        "title": "Cardio",
+        "description": "Latest-generation Technogym cardio equipment: treadmills, bikes and rowers, for endurance sessions in a light-filled space."
+      },
+      {
+        "title": "Strength training",
+        "description": "Guided stations and a Technogym free-weights area to work every muscle group, from beginners to experienced athletes."
+      },
+      {
+        "title": "Private coaching",
+        "description": "Tailored private coaching, adapted to your goals and level, available as an extra for a more personal experience."
+      }
+    ],
+    "wellnessItems": [
+      {
+        "title": "Swim spa",
+        "description": "Extend your session in the indoor swim spa."
+      },
+      {
+        "title": "Hammam",
+        "description": "A moment of deep relaxation after training."
+      },
+      {
+        "title": "Sauna",
+        "description": "Recovery and rest in a soothing dry heat."
+      },
+      {
+        "title": "Outdoor pool",
+        "description": "Outdoor pool, open in season."
+      }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Stay in touch",
+    "title": "Contact",
+    "heading": "Le Gabriel",
+    "hours": "Opening for the 2027 season",
+    "faqTitle": "Frequently asked questions"
+  },
+  "reserverPage": {
+    "eyebrow": "Your stay",
+    "title": "Book",
+    "faqTitle": "Frequently asked questions"
+  },
+  "faq": [
+    {
+      "question": "What are the check-in and check-out times?",
+      "answer": "Check-in is from 3:00 pm and check-out is before 11:00 am. For an early arrival or a late departure, please contact us: we will do our best according to availability."
+    },
+    {
+      "question": "Are pets allowed?",
+      "answer": "Pets are welcome upon prior request, with a cleaning supplement of 30 €. Please let us know at the time of booking."
+    },
+    {
+      "question": "Is household linen provided?",
+      "answer": "Yes, sheets, bath towels and tea towels are provided and refreshed each week for stays of more than 7 nights."
+    },
+    {
+      "question": "Is there parking on site?",
+      "answer": "Yes, private and secure parking is available to all our guests at no extra charge."
+    },
+    {
+      "question": "How can I change or cancel my booking?",
+      "answer": "You may change or cancel your booking up to 14 days before arrival for a full refund. After that date, the stay remains due except in exceptional circumstances. Please contact us directly at contact@legabriel.fr."
+    },
+    {
+      "question": "Is the gym included?",
+      "answer": "Access to the gym is complimentary for all residents. Outside visitors may also use it with a day pass at 15 €."
+    }
+  ],
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send",
+    "thanksTitle": "Thank you!",
+    "thanksText": "We have received your message and will get back to you shortly."
+  },
+  "bookingForm": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "arrival": "Arrival",
+    "departure": "Departure",
+    "guests": "Guests",
+    "housingType": "Preferred type of accommodation",
+    "studio": "Studio",
+    "apartment": "One-bedroom apartment",
+    "either": "No preference",
+    "message": "Message",
+    "submit": "Send request",
+    "thanksTitle": "Thank you!",
+    "thanksText": "We have received your booking request and will get back to you shortly to confirm availability and rates."
+  },
+  "legal": {
+    "eyebrow": "Legal information",
+    "title": "Legal notice",
+    "publisherTitle": "Website publisher",
+    "nameLabel": "Name:",
+    "nameValue": "SCI AZUR (S.C.I AZUR)",
+    "formLabel": "Legal form:",
+    "formValue": "SCI, société civile immobilière (French civil real-estate company)",
+    "sirenLabel": "SIREN:",
+    "sirenValue": "451 528 913",
+    "siretLabel": "Head-office SIRET:",
+    "siretValue": "451 528 913 00010",
+    "vatLabel": "EU VAT number:",
+    "vatValue": "FR84 451 528 913",
+    "rcsLabel": "RCS:",
+    "rcsValue": "registered with the Ajaccio registry on 05/01/2004",
+    "rcsNumberLabel": "RCS number:",
+    "rcsNumberValue": "451 528 913 R.C.S. Ajaccio",
+    "capitalLabel": "Share capital:",
+    "capitalValue": "1 525,00 €",
+    "directorLabel": "Director:",
+    "directorValue": "Didier Gulli, manager",
+    "hqLabel": "Registered office:",
+    "hqValue": "Solenzara, Résidence Belle Image, 20145 Sari Solenzara",
+    "nafLabel": "NAF/APE code:",
+    "nafValue": "68.20B (Rental of land and other real estate)",
+    "createdLabel": "Date of incorporation:",
+    "createdValue": "23/12/2003",
+    "publicationTitle": "Publication director",
+    "publicationText": "Didier Gulli, manager of SCI AZUR.",
+    "hostingTitle": "Hosting",
+    "hostingText": "Vercel Inc., 340 S Lemon Ave, Walnut, CA 91789, USA.",
+    "privacyTitle": "Personal data",
+    "privacyP1": "SCI AZUR is committed to protecting the confidentiality of personal information collected on this website.",
+    "privacyContactLabel": "Data protection contact:",
+    "privacyPurposesLabel": "Purposes of processing:",
+    "privacyPurposes": "booking management, guest relations and, where applicable, audience measurement subject to your consent.",
+    "privacyRights": "You have the right to access, rectify, object to and delete data concerning you. To exercise these rights, please send your request to contact@legabriel.fr.",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "The site uses technical cookies required for it to function, as well as audience-measurement cookies via Vercel Analytics. No third-party advertising cookies are placed without your explicit consent. You may change your preferences at any time by contacting contact@legabriel.fr.",
+    "ipTitle": "Intellectual property",
+    "ipText": "All content on this website (texts, photographs, illustrations, logos and graphic identity) is the exclusive property of SCI AZUR, except where Unsplash credits are indicated. Any reproduction, representation, modification or adaptation, in whole or in part, without prior written authorisation is strictly prohibited.",
+    "creditsTitle": "Credits",
+    "creditsText": "Design and development: Comm’On Agency."
+  },
+  "news": {
+    "eyebrow": "Stay informed",
+    "title": "News",
+    "readMore": "Read more",
+    "related": "You may also like"
+  },
+  "articles": {
+    "ouverture-appart-hotel-solenzara": {
+      "category": "News",
+      "date": "27 June 2026",
+      "title": "Le Gabriel aparthotel opens in Solenzara",
+      "excerpt": "Discover a new way to stay: the privacy of an apartment with the services of a hotel, in the heart of Corsica.",
+      "content": [
+        "It is with great pride that we open the doors of Le Gabriel, an aparthotel imagined as a contemporary guesthouse in the heart of Solenzara. Set between the fine sandy beaches of south-eastern Corsica and the mountains of the Alta Rocca, our establishment offers a new way to stay: the privacy and space of an apartment, together with the services you expect from a hotel.",
+        "Le Gabriel has 12 studios and 11 one-bedroom apartments, each welcoming 4 to 5 guests. Every home includes a fitted kitchen, fibre Wi-Fi, reversible air conditioning, a terrace or balcony, and a full set of household linen. The decoration, sober and elegant, draws on the tones of the Corsican earth to create a warm, soothing setting.",
+        "Beyond the apartments, we have designed welcoming shared spaces: a heated pool surrounded by a Mediterranean garden, private and secure parking, and a modern gym on the ground floor, open to residents and the public. Our team is on hand to arrange your arrival, advise you on the region and make every step of your stay straightforward.",
+        "Solenzara proves an ideal starting point from which to explore Corsica. Idyllic beaches, natural river pools, the Aiguilles de Bavella and the villages of the Alta Rocca are just minutes away. Whether you come to unwind, to hike or to discover the local gastronomy, Le Gabriel offers a refined pied-à-terre at the rhythm of the island."
+      ]
+    },
+    "guide-plages-solenzara": {
+      "category": "Discover",
+      "date": "15 June 2026",
+      "title": "The finest beaches around Solenzara",
+      "excerpt": "From Canella to Santa Giulia, a tour of the sandy coves within easy reach of your aparthotel.",
+      "content": [
+        "Solenzara is a little-known gem of the Corsican coastline, ideal for lovers of wild beaches and unspoilt coves. Just a few minutes by car or bicycle from Le Gabriel aparthotel, you will find stretches of fine sand edged by crystal-clear water.",
+        "Canella beach is perhaps the closest, and one of the most charming. Its golden sand, shaded by umbrella pines, is perfect for families. The warm, shallow water makes swimming safe, while the rocky seabed to the side invites snorkelling.",
+        "Further south, Favone beach surprises with an atmosphere that is both lively and natural. Small beach restaurants serve grilled fresh fish and Corsican specialities with your feet in the sand. For walkers, the coastal path alongside it opens onto spectacular views of the Aiguilles de Bavella.",
+        "Santa Giulia, further towards Porto-Vecchio, is also worth the excursion. Its turquoise lagoon is one of the most photographed in Corsica. And do not forget the natural pools of the Solenzara river: refreshing swims in the heart of the maquis, a short walk from the village. In summer, they become a favourite meeting place for locals and for our guests."
+      ]
+    },
+    "nouvelle-salle-sport": {
+      "category": "Wellness",
+      "date": "10 June 2026",
+      "title": "A modern gym on the ground floor",
+      "excerpt": "Cardio, strength training and group classes: the new Le Gabriel gym welcomes residents and visitors.",
+      "content": [
+        "Le Gabriel is more than quality accommodation: we have also thought about your physical well-being. Our gym, on the ground floor of the aparthotel, is open to both residents and the public. Available during the day and in the evening, it is equipped with modern machines that are regularly maintained.",
+        "The cardio area offers treadmills, elliptical trainers and rowers — ideal for unwinding after a day of hiking or at the beach. The free-weights area is equipped with dumbbells, benches and guided machines so you can work every muscle group safely.",
+        "We also run group classes led by certified coaches: outdoor yoga on the terrace in the morning, circuit training on Tuesdays and Thursdays, and a stretching session on Saturday afternoons. Residents enjoy complimentary access to the gym and preferential rates for classes.",
+        "Outside visitors can also use the space with a day pass at 15 € or a monthly membership at 39 €. Parking and changing rooms are available. Whether you are on holiday or live nearby, the gym at Le Gabriel welcomes you in an elegant, motivating setting, overlooking the Mediterranean garden."
+      ]
+    }
+  },
+  "cookies": {
+    "text": "This website uses cookies to improve your experience and measure audience.",
+    "decline": "Continue without accepting",
+    "accept": "Accept all"
+  },
+  "footer": {
+    "location": "Solenzara · Corsica · contact@legabriel.fr"
+  }
+}

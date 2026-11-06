@@ -1,6 +1,7 @@
 'use client'
 
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { Instagram, Facebook } from 'lucide-react'
 
@@ -9,18 +10,19 @@ function Logo({ className = '', variant = 'dark' }: { className?: string; varian
   return <Image src={src} alt="Le Gabriel" width={200} height={56} unoptimized className={className} />
 }
 
-const footerLinks = [
-  { href: '/appartements', label: 'Appartements' },
-  { href: '/services', label: 'Services' },
-  { href: '/salle-de-sport', label: 'Salle de sport' },
-  { href: '/region', label: 'La Région' },
-  { href: '/actualites', label: 'Actualités' },
-  { href: '/reserver', label: 'Réserver' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/mentions-legales', label: 'Mentions légales' },
-]
-
 export function Footer() {
+  const t = useTranslations()
+  const footerLinks = [
+    { href: '/appartements' as const, label: t('nav.appartements') },
+    { href: '/services' as const, label: t('nav.services') },
+    { href: '/salle-de-sport' as const, label: t('nav.salleDeSport') },
+    { href: '/region' as const, label: t('nav.region') },
+    { href: '/actualites' as const, label: t('nav.actualites') },
+    { href: '/reserver' as const, label: t('nav.reserver') },
+    { href: '/contact' as const, label: t('nav.contact') },
+    { href: '/mentions-legales' as const, label: t('nav.mentions') },
+  ]
+
   return (
     <footer className="bg-[#1A1A14]">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 pb-10">
@@ -48,7 +50,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-[0.5rem] tracking-[0.3em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white/70">
-            Solenzara · Corse · contact@legabriel.fr
+            {t('footer.location')}
           </p>
 
           <div className="flex gap-5">

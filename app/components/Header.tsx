@@ -71,12 +71,20 @@ export function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between">
-            <nav className="hidden lg:flex items-center gap-8 flex-1">
+            <div
+              className="invisible hidden lg:flex items-center shrink-0 mr-2 xl:mr-4 pr-3 xl:pr-4 border-l border-transparent"
+              aria-hidden="true"
+              inert
+            >
+              <LanguageSwitcher variant={switcherVariant} />
+            </div>
+
+            <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 flex-1 min-w-0">
               {navItems.slice(0, 3).map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
+                  className={`whitespace-nowrap text-[0.6rem] tracking-[0.18em] xl:tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
                     pathname === item.href ? textActive : textBase
                   }`}
                 >
@@ -85,29 +93,34 @@ export function Header() {
               ))}
             </nav>
 
-            <Link href="/" className="flex items-center group flex-shrink-0">
+            <Link href="/" className="flex items-center group flex-shrink-0 mx-3 xl:mx-4">
               <Logo
                 variant={isScrolled || !isHome ? 'dark' : 'light'}
                 className="h-14 w-auto transition-opacity duration-500"
               />
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-8 flex-1 justify-end">
+            <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 flex-1 justify-end min-w-0">
               {navItems.slice(3).map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
+                  className={`whitespace-nowrap text-[0.6rem] tracking-[0.18em] xl:tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
                     pathname === item.href ? textActive : textBase
                   }`}
                 >
                   {item.label}
                 </Link>
               ))}
-              <span className={`ml-1 pl-4 border-l ${isScrolled || !isHome ? 'border-[#1A1A14]/15' : 'border-white/25'}`}>
-                <LanguageSwitcher variant={switcherVariant} />
-              </span>
             </nav>
+
+            <div
+              className={`hidden lg:flex items-center shrink-0 ml-2 xl:ml-4 pl-3 xl:pl-4 border-l ${
+                isScrolled || !isHome ? 'border-[#1A1A14]/15' : 'border-white/25'
+              }`}
+            >
+              <LanguageSwitcher variant={switcherVariant} />
+            </div>
 
             <div className="lg:hidden flex items-center gap-4">
               <LanguageSwitcher variant={switcherVariant} />
@@ -148,7 +161,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-[0.75rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] font-normal transition-colors ${
+                className={`whitespace-nowrap text-[0.75rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] font-normal transition-colors ${
                   pathname === item.href
                     ? 'text-[#6B7240]'
                     : 'text-[#1A1A14]/70 hover:text-[#6B7240]'

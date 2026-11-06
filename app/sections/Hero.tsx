@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
+import { Link } from '@/i18n/navigation'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -26,9 +27,17 @@ interface HeroData {
 
 interface HeroProps {
   data?: HeroData | null
+  discoverLabel?: string
+  contactLabel?: string
+  scrollLabel?: string
 }
 
-export function Hero({ data }: HeroProps) {
+export function Hero({
+  data,
+  discoverLabel = 'Découvrir',
+  contactLabel = 'Nous contacter',
+  scrollLabel = 'Scroll',
+}: HeroProps) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
@@ -118,14 +127,14 @@ export function Hero({ data }: HeroProps) {
                 onClick={() => scrollTo('domaine')}
                 className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium text-white border border-white/40 hover:border-white hover:bg-white/10 px-8 py-3.5 transition-all duration-500"
               >
-                Découvrir
+                {discoverLabel}
               </button>
-              <button
-                onClick={() => scrollTo('contact')}
+              <Link
+                href="/contact"
                 className="text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium text-white/60 hover:text-white transition-colors duration-300"
               >
-                Nous contacter
-              </button>
+                {contactLabel}
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -143,7 +152,7 @@ export function Hero({ data }: HeroProps) {
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           className="w-px h-10 bg-white/30"
         />
-        <span className="text-white/30 text-[0.5rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] rotate-90 origin-center mt-2">Scroll</span>
+        <span className="text-white/30 text-[0.5rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] rotate-90 origin-center mt-2">{scrollLabel}</span>
       </motion.div>
     </section>
   )

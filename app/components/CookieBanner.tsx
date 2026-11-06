@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 declare global {
   interface Window {
@@ -10,6 +11,7 @@ declare global {
 
 export function CookieBanner() {
   const [visible, setVisible] = useState(false)
+  const t = useTranslations('cookies')
 
   useEffect(() => {
     const consent = typeof window !== 'undefined' ? window.localStorage.getItem('cookie-consent') : null
@@ -38,20 +40,20 @@ export function CookieBanner() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 py-5 md:py-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
           <p className="text-[0.65rem] md:text-[0.7rem] font-[family-name:var(--font-montserrat)] text-[#1A1A14]/80 leading-relaxed text-center md:text-left">
-            Ce site utilise des cookies pour améliorer votre expérience et mesurer l&apos;audience.
+            {t('text')}
           </p>
           <div className="flex items-center gap-3 flex-shrink-0">
             <button
               onClick={() => handleChoice('declined')}
               className="text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-[#1A1A14]/70 hover:text-[#1A1A14] border border-[#E8E4DC] px-5 py-2.5 transition-colors duration-300"
             >
-              Continuer sans accepter
+              {t('decline')}
             </button>
             <button
               onClick={() => handleChoice('accepted')}
               className="text-[0.55rem] tracking-[0.25em] uppercase font-[family-name:var(--font-montserrat)] font-normal text-white bg-[#6B7240] hover:bg-[#505535] px-5 py-2.5 transition-colors duration-300"
             >
-              Tout accepter
+              {t('accept')}
             </button>
           </div>
         </div>

@@ -1,21 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { usePathname, Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-
-const navItems = [
-  { href: '/appartements', label: 'Appartements' },
-  { href: '/services', label: 'Services' },
-  { href: '/salle-de-sport', label: 'Salle de sport' },
-  { href: '/region', label: 'La Région' },
-  { href: '/actualites', label: 'Actualités' },
-  { href: '/reserver', label: 'Réserver' },
-  { href: '/contact', label: 'Contact' },
-]
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 function Logo({
   className = '',
@@ -32,6 +23,17 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const t = useTranslations('nav')
+
+  const navItems = [
+    { href: '/appartements' as const, label: t('appartements') },
+    { href: '/services' as const, label: t('services') },
+    { href: '/salle-de-sport' as const, label: t('salleDeSport') },
+    { href: '/region' as const, label: t('region') },
+    { href: '/actualites' as const, label: t('actualites') },
+    { href: '/reserver' as const, label: t('reserver') },
+    { href: '/contact' as const, label: t('contact') },
+  ]
 
   const isHome = pathname === '/'
 
@@ -57,6 +59,8 @@ export function Header() {
   const mobileIconColor =
     isScrolled || !isHome ? 'text-[#1A1A14]' : 'text-white'
 
+  const switcherVariant = isScrolled || !isHome ? 'solid' : 'hero'
+
   return (
     <>
       <motion.header
@@ -67,13 +71,20 @@ export function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between">
-            {/* Desktop nav left */}
-            <nav className="hidden lg:flex items-center gap-10 flex-1">
+            <div
+              className="invisible hidden lg:flex items-center shrink-0 mr-2 xl:mr-4 pr-3 xl:pr-4 border-l border-transparent"
+              aria-hidden="true"
+              inert
+            >
+              <LanguageSwitcher variant={switcherVariant} />
+            </div>
+
+            <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 flex-1 min-w-0">
               {navItems.slice(0, 3).map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
+                  className={`whitespace-nowrap text-[0.6rem] tracking-[0.18em] xl:tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
                     pathname === item.href ? textActive : textBase
                   }`}
                 >
@@ -82,21 +93,19 @@ export function Header() {
               ))}
             </nav>
 
-            {/* Logo centré */}
-            <Link href="/" className="flex items-center group flex-shrink-0">
+            <Link href="/" className="flex items-center group flex-shrink-0 mx-3 xl:mx-4">
               <Logo
                 variant={isScrolled || !isHome ? 'dark' : 'light'}
                 className="h-14 w-auto transition-opacity duration-500"
               />
             </Link>
 
-            {/* Desktop nav right */}
-            <nav className="hidden lg:flex items-center gap-10 flex-1 justify-end">
+            <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 flex-1 justify-end min-w-0">
               {navItems.slice(3).map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[0.65rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
+                  className={`whitespace-nowrap text-[0.6rem] tracking-[0.18em] xl:tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] font-medium transition-all duration-300 ${
                     pathname === item.href ? textActive : textBase
                   }`}
                 >
@@ -105,22 +114,32 @@ export function Header() {
               ))}
             </nav>
 
-            {/* Mobile burger */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`lg:hidden transition-colors ${mobileIconColor}`}
+            <div
+              className={`hidden lg:flex items-center shrink-0 ml-2 xl:ml-4 pl-3 xl:pl-4 border-l ${
+                isScrolled || !isHome ? 'border-[#1A1A14]/15' : 'border-white/25'
+              }`}
             >
-              {mobileMenuOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <Menu className="w-5 h-5" />
-              )}
-            </button>
+              <LanguageSwitcher variant={switcherVariant} />
+            </div>
+
+            <div className="lg:hidden flex items-center gap-4">
+              <LanguageSwitcher variant={switcherVariant} />
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className={`transition-colors ${mobileIconColor}`}
+                aria-label="Menu"
+              >
+                {mobileMenuOpen ? (
+                  <X className="w-5 h-5" />
+                ) : (
+                  <Menu className="w-5 h-5" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </motion.header>
 
-      {/* Mobile overlay */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -128,7 +147,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-[#FAF8F3] flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-[60] bg-[#FAF8F3] flex flex-col items-center justify-center gap-8"
           >
             <button
               onClick={() => setMobileMenuOpen(false)}
@@ -142,7 +161,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-[0.75rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] font-normal transition-colors ${
+                className={`whitespace-nowrap text-[0.75rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] font-normal transition-colors ${
                   pathname === item.href
                     ? 'text-[#6B7240]'
                     : 'text-[#1A1A14]/70 hover:text-[#6B7240]'
@@ -151,6 +170,9 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <div className="mt-4 pt-6 border-t border-[#E8E4DC]">
+              <LanguageSwitcher variant="menu" />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

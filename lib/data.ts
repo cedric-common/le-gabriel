@@ -1,17 +1,54 @@
-export const housingCategoryMeta = [
+export type HousingView = 'sea' | 'villageMountain'
+
+export type HousingLayout = 'studio' | 't2' | 't3'
+
+export type HousingTypology = {
+  id: 'signature' | 'azur' | 'terra' | 'privilege'
+  name: string
+  layout: HousingLayout
+  count: number
+  perFloor: number
+  size?: number
+  view?: HousingView
+  image?: string
+}
+
+// Noms propres figés : identiques dans toutes les langues.
+export const housingTypologies: HousingTypology[] = [
   {
-    type: 'studio' as const,
-    count: 14,
-    guests: 4,
-    sizeFrom: 28,
+    id: 'signature',
+    name: 'La Signature',
+    layout: 'studio',
+    count: 8,
+    perFloor: 2,
     image: '/photos/appart-studio.jpg',
   },
   {
-    type: 'appartement' as const,
-    count: 15,
-    guests: 5,
-    sizeFrom: 45,
-    image: '/photos/appart-T2.jpg',
+    id: 'azur',
+    name: 'L\u2019Azur',
+    layout: 't2',
+    count: 8,
+    perFloor: 2,
+    size: 43,
+    view: 'sea',
+  },
+  {
+    id: 'terra',
+    name: 'La Terra',
+    layout: 't2',
+    count: 4,
+    perFloor: 1,
+    size: 46,
+    view: 'villageMountain',
+  },
+  {
+    id: 'privilege',
+    name: 'Le Privilège',
+    layout: 't3',
+    count: 4,
+    perFloor: 1,
+    size: 63,
+    view: 'sea',
   },
 ]
 
@@ -27,3 +64,9 @@ export const contactInfo = {
   phone: '',
   address: 'Le Gabriel, Sari-Solenzara, 20145 Solenzara, Corse',
 }
+
+export function listHousingNames() {
+  return housingTypologies.map((item) => item.name).join(', ')
+}
+
+export const housingTotal = housingTypologies.reduce((sum, item) => sum + item.count, 0)

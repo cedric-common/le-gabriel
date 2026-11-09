@@ -7,11 +7,16 @@ import { ReserverForm } from './ReserverForm'
 import { FaqItem } from '../../components/FaqItem'
 import Image from 'next/image'
 import { localeAlternates } from '@/lib/seo'
+import { listHousingNames } from '@/lib/data'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'meta.reserver' })
-  return { title: t('title'), description: t('description'), alternates: localeAlternates(locale, '/reserver') }
+  return {
+    title: t('title'),
+    description: t('description', { names: listHousingNames() }),
+    alternates: localeAlternates(locale, '/reserver'),
+  }
 }
 
 export default async function ReserverPage({ params }: { params: Promise<{ locale: string }> }) {

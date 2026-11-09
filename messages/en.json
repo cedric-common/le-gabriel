@@ -2,11 +2,11 @@
   "meta": {
     "home": {
       "title": "Le Gabriel | Aparthotel in Solenzara",
-      "description": "Aparthotel in Solenzara, Corsica: 12 studios and 11 one-bedroom apartments for 4 to 5 guests."
+      "description": "Aparthotel in Solenzara, Corsica: {count} apartments. {names}."
     },
     "appartements": {
-      "title": "Apartments · Le Gabriel",
-      "description": "Discover our 29 contemporary apartments in Sari-Solenzara: studios and one-bedroom apartments with a private terrace."
+      "title": "La Signature, L’Azur, La Terra, Le Privilège · Le Gabriel",
+      "description": "La Signature, L’Azur, La Terra and Le Privilège in Sari-Solenzara."
     },
     "services": {
       "title": "Services · Le Gabriel",
@@ -26,7 +26,7 @@
     },
     "reserver": {
       "title": "Book · Le Gabriel",
-      "description": "Book your studio or apartment in Solenzara, Corsica."
+      "description": "Book {names} in Solenzara, Corsica."
     },
     "legal": {
       "title": "Legal notice · Le Gabriel",
@@ -53,22 +53,20 @@
     "contactUs": "Contact us",
     "scroll": "Scroll",
     "language": "Language",
-    "reserve": "Book",
-    "housingStats": "{count} units · up to {guests} guests · from {size} m²"
+    "reserve": "Book"
   },
   "home": {
     "heroEyebrow": "Aparthotel · Sari-Solenzara, Corsica",
     "heroTitle1": "Le Gabriel.",
     "heroTitle2": "Your stay in Corsica.",
-    "heroSubtitle": "29 contemporary apartments · Opening for the 2027 season",
+    "heroSubtitle": "{count} contemporary apartments · Opening for the 2027 season",
     "introSurtitle": "Welcome",
     "introTitle": "A Mediterranean way of life",
     "introP1": "In the heart of the village of Sari-Solenzara, just a three-minute walk from the marina, Le Gabriel welcomes you into an elegant, peaceful setting between sea and mountains.",
     "introP2": "The independence of an apartment, together with the comfort and services of a hotel.",
-    "introP3": "29 contemporary apartments, equipped for short or long stays, each with a private terrace facing the sea or the village.",
+    "introP3": "{count} contemporary apartments, equipped for short or long stays, each with a private terrace.",
     "introCta": "Discover the apartments",
     "housingSurtitle": "Accommodations",
-    "housingTitle": "Studios & Apartments",
     "wellnessSurtitle": "Relaxation & wellness",
     "wellnessTitle": "A stay to restore you",
     "allServices": "All services",
@@ -95,34 +93,28 @@
     ]
   },
   "housing": {
-    "studio": {
-      "title": "Studios",
-      "beds": "Double bed 180×200 + sofa bed",
-      "description": "Elegant, contemporary studios with a private terrace facing the sea or the village. Fully equipped kitchen, premium bedding and double glazing for the finest comfort.",
-      "features": [
-        "Fully equipped kitchen",
-        "Air conditioning",
-        "Large private terrace",
-        "Double glazing",
-        "Premium 180×200 bedding",
-        "Free high-speed Wi-Fi",
-        "Television"
-      ]
+    "kind": {
+      "studio": "One-room studio",
+      "t2": "Two-room apartment",
+      "t3": "Three-room apartment"
     },
-    "appartement": {
-      "title": "One-bedroom apartments",
-      "beds": "Bedroom with 180×200 double bed + living-room sofa bed",
-      "description": "Spacious apartments with a separate bedroom, living room, fully equipped kitchen and a large private terrace facing the sea or the village. Ideal for families and longer stays.",
-      "features": [
-        "Fully equipped kitchen",
-        "Air conditioning",
-        "Large private terrace",
-        "Double glazing",
-        "Premium 180×200 bedding",
-        "Free high-speed Wi-Fi",
-        "Television"
-      ]
-    }
+    "total": "{count} apartments",
+    "size": "{size} m²",
+    "quantity": "{count} apartments ({perFloor} per floor)",
+    "views": {
+      "sea": "Sea view",
+      "villageMountain": "Village / mountain view"
+    },
+    "amenities": "Fully equipped kitchen, premium bedding and double glazing for the finest comfort.",
+    "features": [
+      "Fully equipped kitchen",
+      "Air conditioning",
+      "Large private terrace",
+      "Double glazing",
+      "Premium 180×200 bedding",
+      "Free high-speed Wi-Fi",
+      "Television"
+    ]
   },
   "housingServices": [
     {
@@ -140,13 +132,9 @@
   ],
   "appartementsPage": {
     "eyebrow": "Our accommodations",
-    "title": "Studios & Apartments",
     "introSurtitle": "Thoughtfully designed for your comfort",
-    "introTitle": "29 contemporary apartments",
-    "introText": "Elegant and practical, every apartment offers high-end amenities and a large private terrace looking towards the sea or the village, so you can fully enjoy the unique atmosphere of the east coast.",
-    "countLabel": "{count} units",
-    "upToGuests": "Up to {guests} guests",
-    "fromSize": "From {size} m²",
+    "introTitle": "{count} contemporary apartments",
+    "introText": "Elegant and practical, every apartment offers high-end amenities and a large private terrace, so you can fully enjoy the unique atmosphere of the east coast.",
     "servicesSurtitle": "At your service",
     "servicesTitle": "A stay tailored to you"
   },
@@ -357,8 +345,6 @@
     "departure": "Departure",
     "guests": "Guests",
     "housingType": "Preferred type of accommodation",
-    "studio": "Studio",
-    "apartment": "One-bedroom apartment",
     "either": "No preference",
     "message": "Message",
     "submit": "Send request",
@@ -424,7 +410,7 @@
       "excerpt": "Discover a new way to stay: the privacy of an apartment with the services of a hotel, in the heart of Corsica.",
       "content": [
         "It is with great pride that we open the doors of Le Gabriel, an aparthotel imagined as a contemporary guesthouse in the heart of Solenzara. Set between the fine sandy beaches of south-eastern Corsica and the mountains of the Alta Rocca, our establishment offers a new way to stay: the privacy and space of an apartment, together with the services you expect from a hotel.",
-        "Le Gabriel has 12 studios and 11 one-bedroom apartments, each welcoming 4 to 5 guests. Every home includes a fitted kitchen, fibre Wi-Fi, reversible air conditioning, a terrace or balcony, and a full set of household linen. The decoration, sober and elegant, draws on the tones of the Corsican earth to create a warm, soothing setting.",
+        "Le Gabriel has 24 apartments: La Signature, a one-room studio, 8 apartments (2 per floor); L’Azur, a two-room apartment, 8 apartments of 43 m² with a sea view (2 per floor); La Terra, a two-room apartment, 4 apartments of 46 m² with a village / mountain view (1 per floor); Le Privilège, a three-room apartment, 4 apartments of 63 m² with a sea view (1 per floor). Every home includes a fitted kitchen, fibre Wi-Fi, reversible air conditioning, a terrace or balcony, and a full set of household linen. The decoration, sober and elegant, draws on the tones of the Corsican earth to create a warm, soothing setting.",
         "Beyond the apartments, we have designed welcoming shared spaces: a heated pool surrounded by a Mediterranean garden, private and secure parking, and a modern gym on the ground floor, open to residents and the public. Our team is on hand to arrange your arrival, advise you on the region and make every step of your stay straightforward.",
         "Solenzara proves an ideal starting point from which to explore Corsica. Idyllic beaches, natural river pools, the Aiguilles de Bavella and the villages of the Alta Rocca are just minutes away. Whether you come to unwind, to hike or to discover the local gastronomy, Le Gabriel offers a refined pied-à-terre at the rhythm of the island."
       ]

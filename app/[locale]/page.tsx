@@ -6,7 +6,7 @@ import { Hero } from '../sections/Hero'
 import { FadeIn } from '../components/FadeIn'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { housingTypologies, listHousingNames, regionHighlightMeta } from '@/lib/data'
+import { housingTotal, housingTypologies, listHousingNames, regionHighlightMeta } from '@/lib/data'
 import { housingFactLabels } from '@/lib/housingCopy'
 import { ArrowRight } from 'lucide-react'
 import { localeAlternates } from '@/lib/seo'
@@ -22,7 +22,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta.home' })
   return {
     title: t('title'),
-    description: t('description', { names: listHousingNames() }),
+    description: t('description', { count: housingTotal, names: listHousingNames() }),
     alternates: localeAlternates(locale, '/'),
   }
 }
@@ -63,7 +63,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             eyebrow: t('heroEyebrow'),
             titleLine1: t('heroTitle1'),
             titleLine2: t('heroTitle2'),
-            subtitle: t('heroSubtitle'),
+            subtitle: t('heroSubtitle', { count: housingTotal }),
             imageUrl: '/photos/hero-homepage.jpg',
           }}
           discoverLabel={tc('discover')}
@@ -81,7 +81,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {t('introP2')}
             </p>
             <p className="text-[#1A1A14]/70 font-[family-name:var(--font-cormorant)] text-lg md:text-xl font-light leading-relaxed mb-8">
-              {t('introP3')}
+              {t('introP3', { count: housingTotal })}
             </p>
             <Link
               href="/appartements"

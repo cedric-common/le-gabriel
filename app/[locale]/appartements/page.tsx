@@ -5,8 +5,8 @@ import { Footer } from '../../components/Footer'
 import { FadeIn } from '../../components/FadeIn'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { housingTypologies, listHousingNames } from '@/lib/data'
-import { housingMetadataSummary } from '@/lib/housingCopy'
+import { housingTotal, housingTypologies, listHousingNames } from '@/lib/data'
+import { housingKindLabel, housingMetadataSummary } from '@/lib/housingCopy'
 import { Ruler, ArrowRight, Check } from 'lucide-react'
 import { localeAlternates } from '@/lib/seo'
 
@@ -64,7 +64,7 @@ export default async function AppartementsPage({ params }: { params: Promise<{ l
                 {t('introSurtitle')}
               </p>
               <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] uppercase tracking-wide mb-6">
-                {t('introTitle')}
+                {t('introTitle', { count: housingTotal })}
               </h2>
               <p className="text-lg font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed">
                 {t('introText')}
@@ -86,11 +86,9 @@ export default async function AppartementsPage({ params }: { params: Promise<{ l
                         </div>
                       ) : null}
                       <div className={`p-8 md:p-12 flex flex-col justify-center ${item.image ? '' : 'border-l-2 border-[#6B7240]'}`}>
-                        {item.id === 'signature' ? (
-                          <p className="text-[0.6rem] tracking-[0.3em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-3">
-                            {th('kind.signature')}
-                          </p>
-                        ) : null}
+                        <p className="text-[0.6rem] tracking-[0.3em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-3">
+                          {housingKindLabel(th, item)}
+                        </p>
                         <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] tracking-wide mb-4">
                           {item.name}
                         </h2>

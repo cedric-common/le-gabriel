@@ -2,7 +2,7 @@
   "meta": {
     "home": {
       "title": "Le Gabriel | Aparthotel a Solenzara",
-      "description": "Aparthotel a Solenzara, in Corsica: {names}."
+      "description": "Aparthotel a Solenzara, in Corsica: {count} appartamenti. {names}."
     },
     "appartements": {
       "title": "La Signature, L’Azur, La Terra, Le privilège · Le Gabriel",
@@ -59,12 +59,12 @@
     "heroEyebrow": "Aparthotel · Sari-Solenzara, Corsica",
     "heroTitle1": "Le Gabriel.",
     "heroTitle2": "Il vostro soggiorno in Corsica.",
-    "heroSubtitle": "29 appartamenti contemporanei · Apertura stagione 2027",
+    "heroSubtitle": "{count} appartamenti contemporanei · Apertura stagione 2027",
     "introSurtitle": "Benvenuti",
     "introTitle": "Un’arte di vivere mediterranea",
     "introP1": "Nel cuore del villaggio di Sari-Solenzara, a soli 3 minuti a piedi dal porto turistico, Le Gabriel vi accoglie in un contesto elegante e sereno, tra mare e montagna.",
     "introP2": "L’indipendenza di un appartamento unita al comfort e ai servizi di un hotel.",
-    "introP3": "29 appartamenti contemporanei, attrezzati per soggiorni brevi o lunghi, ciascuno con terrazza privata.",
+    "introP3": "{count} appartamenti contemporanei, attrezzati per soggiorni brevi o lunghi, ciascuno con terrazza privata.",
     "introCta": "Scoprire gli alloggi",
     "housingSurtitle": "Alloggi",
     "wellnessSurtitle": "Spazio relax e benessere",
@@ -94,8 +94,11 @@
   },
   "housing": {
     "kind": {
-      "signature": "Monolocali"
+      "studio": "Monolocale",
+      "t2": "Bilocale",
+      "t3": "Trilocale"
     },
+    "total": "{count} appartamenti",
     "size": "{size} m²",
     "quantity": "{count} appartamenti ({perFloor} per piano)",
     "views": {
@@ -130,7 +133,7 @@
   "appartementsPage": {
     "eyebrow": "I nostri alloggi",
     "introSurtitle": "Alloggi pensati per il vostro comfort",
-    "introTitle": "29 appartamenti contemporanei",
+    "introTitle": "{count} appartamenti contemporanei",
     "introText": "Eleganti e funzionali, tutti i nostri appartamenti dispongono di attrezzature di alto livello e di un’ampia terrazza privata, per vivere appieno l’atmosfera unica della costa orientale.",
     "servicesSurtitle": "Al vostro servizio",
     "servicesTitle": "Per un soggiorno su misura"
@@ -407,7 +410,7 @@
       "excerpt": "Scoprite un nuovo concetto di ospitalità, tra l’intimità di un appartamento e i servizi di un hotel, nel cuore della Corsica.",
       "content": [
         "È con grande orgoglio che apriamo le porte de Le Gabriel, un aparthotel pensato come una casa per ospiti contemporanea nel cuore di Solenzara. Situato tra le spiagge di sabbia fine del sud-est corso e le montagne dell’Alta Rocca, la nostra struttura propone un nuovo concetto di soggiorno: l’intimità e lo spazio di un appartamento, uniti ai servizi che ci si aspetta da un hotel.",
-        "Le Gabriel propone quattro tipologie: La Signature, 8 appartamenti (2 per piano); L’Azur, 8 appartamenti di 43 m² con vista mare (2 per piano); La Terra, 4 appartamenti di 46 m² con vista villaggio / montagna (1 per piano); Le privilège, 4 appartamenti di 63 m² con vista mare (1 per piano). Gli alloggi possono accogliere da 4 a 5 persone. Ogni alloggio dispone di una cucina attrezzata, di una connessione Wi-Fi in fibra, di climatizzazione reversibile, di una terrazza o di un balcone e di biancheria completa. L’arredo, sobrio ed elegante, trae ispirazione dalle tonalità della terra corsa per offrire un ambiente caldo e sereno.",
+        "Le Gabriel conta 24 appartamenti: La Signature, monolocale, 8 appartamenti (2 per piano); L’Azur, bilocale, 8 appartamenti di 43 m² con vista mare (2 per piano); La Terra, bilocale, 4 appartamenti di 46 m² con vista villaggio / montagna (1 per piano); Le privilège, trilocale, 4 appartamenti di 63 m² con vista mare (1 per piano). Ogni alloggio dispone di una cucina attrezzata, di una connessione Wi-Fi in fibra, di climatizzazione reversibile, di una terrazza o di un balcone e di biancheria completa. L’arredo, sobrio ed elegante, trae ispirazione dalle tonalità della terra corsa per offrire un ambiente caldo e sereno.",
         "Oltre agli alloggi, abbiamo immaginato spazi comuni accoglienti: una piscina riscaldata circondata da un giardino mediterraneo, un parcheggio privato e sicuro e una palestra moderna al piano terra, aperta ai residenti e al pubblico. Il nostro team resta a disposizione per organizzare il vostro arrivo, consigliarvi sulla regione e semplificare ogni momento del soggiorno.",
         "Solenzara si rivela un punto di partenza ideale per esplorare la Corsica. Spiagge da sogno, piscine naturali del fiume, Aiguilles de Bavella e villaggi dell’Alta Rocca sono raggiungibili in pochi minuti. Che veniate per il riposo, le escursioni o la scoperta gastronomica, Le Gabriel vi offre un pied-à-terre raffinato, al ritmo dell’isola."
       ]

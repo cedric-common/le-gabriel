@@ -1,8 +1,11 @@
 export type HousingView = 'sea' | 'villageMountain'
 
+export type HousingLayout = 'studio' | 't2' | 't3'
+
 export type HousingTypology = {
   id: 'signature' | 'azur' | 'terra' | 'privilege'
   name: string
+  layout: HousingLayout
   count: number
   perFloor: number
   size?: number
@@ -16,6 +19,7 @@ export const housingTypologies: HousingTypology[] = [
   {
     id: 'signature',
     name: 'La Signature',
+    layout: 'studio',
     count: 8,
     perFloor: 2,
     image: '/photos/appart-studio.jpg',
@@ -23,6 +27,7 @@ export const housingTypologies: HousingTypology[] = [
   {
     id: 'azur',
     name: 'L\u2019Azur',
+    layout: 't2',
     count: 8,
     perFloor: 2,
     size: 43,
@@ -31,6 +36,7 @@ export const housingTypologies: HousingTypology[] = [
   {
     id: 'terra',
     name: 'La Terra',
+    layout: 't2',
     count: 4,
     perFloor: 1,
     size: 46,
@@ -39,6 +45,7 @@ export const housingTypologies: HousingTypology[] = [
   {
     id: 'privilege',
     name: 'Le privilège',
+    layout: 't3',
     count: 4,
     perFloor: 1,
     size: 63,
@@ -62,3 +69,5 @@ export const contactInfo = {
 export function listHousingNames() {
   return housingTypologies.map((item) => item.name).join(', ')
 }
+
+export const housingTotal = housingTypologies.reduce((sum, item) => sum + item.count, 0)

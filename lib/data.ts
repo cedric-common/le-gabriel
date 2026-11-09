@@ -31,6 +31,7 @@ export const housingTypologies: HousingTypology[] = [
     perFloor: 2,
     size: 43,
     view: 'sea',
+    image: '/photos/appart-T2.jpg',
   },
   {
     id: 'terra',
@@ -40,6 +41,7 @@ export const housingTypologies: HousingTypology[] = [
     perFloor: 1,
     size: 46,
     view: 'villageMountain',
+    image: '/photos/solenzara.jpg',
   },
   {
     id: 'privilege',
@@ -49,6 +51,7 @@ export const housingTypologies: HousingTypology[] = [
     perFloor: 1,
     size: 63,
     view: 'sea',
+    image: '/photos/heroe-services.jpg',
   },
 ]
 

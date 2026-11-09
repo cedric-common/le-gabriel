@@ -41,7 +41,7 @@ export const housingTypologies: HousingTypology[] = [
     perFloor: 1,
     size: 46,
     view: 'villageMountain',
-    image: '/photos/solenzara.jpg',
+    image: '/photos/aiguilles_bavella.webp',
   },
   {
     id: 'privilege',

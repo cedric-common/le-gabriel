@@ -14,7 +14,6 @@ export type HousingTypology = {
 }
 
 // Noms propres figés : identiques dans toutes les langues.
-// « Le privilège » garde le p minuscule du message client.
 export const housingTypologies: HousingTypology[] = [
   {
     id: 'signature',
@@ -44,7 +43,7 @@ export const housingTypologies: HousingTypology[] = [
   },
   {
     id: 'privilege',
-    name: 'Le privilège',
+    name: 'Le Privilège',
     layout: 't3',
     count: 4,
     perFloor: 1,

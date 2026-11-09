@@ -41,7 +41,7 @@ export const housingTypologies: HousingTypology[] = [
     perFloor: 1,
     size: 46,
     view: 'villageMountain',
-    image: '/photos/aiguilles_bavella.webp',
+    image: '/photos/salon-t2-lumineux.webp',
   },
   {
     id: 'privilege',

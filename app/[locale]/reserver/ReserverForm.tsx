@@ -2,10 +2,13 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { housingTypologies } from '@/lib/data'
+import { housingOptionLabel } from '@/lib/housingCopy'
 
 export function ReserverForm() {
   const [submitted, setSubmitted] = useState(false)
   const t = useTranslations('bookingForm')
+  const th = useTranslations('housing')
 
   if (submitted) {
     return (
@@ -78,10 +81,13 @@ export function ReserverForm() {
 
       <div>
         <label className={label}>{t('housingType')}</label>
-        <select className={field}>
-          <option>{t('studio')}</option>
-          <option>{t('apartment')}</option>
-          <option>{t('either')}</option>
+        <select className={field} defaultValue="signature">
+          {housingTypologies.map((item) => (
+            <option key={item.id} value={item.id}>
+              {housingOptionLabel(th, item)}
+            </option>
+          ))}
+          <option value="either">{t('either')}</option>
         </select>
       </div>
 

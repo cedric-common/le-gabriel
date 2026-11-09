@@ -1,17 +1,48 @@
-export const housingCategoryMeta = [
+export type HousingView = 'sea' | 'villageMountain'
+
+export type HousingTypology = {
+  id: 'signature' | 'azur' | 'terra' | 'privilege'
+  name: string
+  count: number
+  perFloor: number
+  size?: number
+  view?: HousingView
+  image?: string
+}
+
+// Noms propres figés : identiques dans toutes les langues.
+// « Le privilège » garde le p minuscule du message client.
+export const housingTypologies: HousingTypology[] = [
   {
-    type: 'studio' as const,
-    count: 14,
-    guests: 4,
-    sizeFrom: 28,
+    id: 'signature',
+    name: 'La Signature',
+    count: 8,
+    perFloor: 2,
     image: '/photos/appart-studio.jpg',
   },
   {
-    type: 'appartement' as const,
-    count: 15,
-    guests: 5,
-    sizeFrom: 45,
-    image: '/photos/appart-T2.jpg',
+    id: 'azur',
+    name: 'L\u2019Azur',
+    count: 8,
+    perFloor: 2,
+    size: 43,
+    view: 'sea',
+  },
+  {
+    id: 'terra',
+    name: 'La Terra',
+    count: 4,
+    perFloor: 1,
+    size: 46,
+    view: 'villageMountain',
+  },
+  {
+    id: 'privilege',
+    name: 'Le privilège',
+    count: 4,
+    perFloor: 1,
+    size: 63,
+    view: 'sea',
   },
 ]
 
@@ -26,4 +57,8 @@ export const contactInfo = {
   email: 'contact@legabriel.fr',
   phone: '',
   address: 'Le Gabriel, Sari-Solenzara, 20145 Solenzara, Corse',
+}
+
+export function listHousingNames() {
+  return housingTypologies.map((item) => item.name).join(', ')
 }

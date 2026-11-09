@@ -2,11 +2,11 @@
   "meta": {
     "home": {
       "title": "Le Gabriel | Aparthotel a Solenzara",
-      "description": "Aparthotel a Solenzara, in Corsica: 12 monolocali e 11 appartamenti con una camera, per 4 o 5 persone."
+      "description": "Aparthotel a Solenzara, in Corsica: {names}."
     },
     "appartements": {
-      "title": "Appartamenti · Le Gabriel",
-      "description": "Scoprite i nostri 29 appartamenti contemporanei a Sari-Solenzara: monolocali e appartamenti con una camera e terrazza privata."
+      "title": "La Signature, L’Azur, La Terra, Le privilège · Le Gabriel",
+      "description": "La Signature, L’Azur, La Terra e Le privilège a Sari-Solenzara."
     },
     "services": {
       "title": "Servizi · Le Gabriel",
@@ -26,7 +26,7 @@
     },
     "reserver": {
       "title": "Prenotare · Le Gabriel",
-      "description": "Prenotate il vostro monolocale o appartamento a Solenzara, in Corsica."
+      "description": "Prenotate {names} a Solenzara, in Corsica."
     },
     "legal": {
       "title": "Note legali · Le Gabriel",
@@ -53,8 +53,7 @@
     "contactUs": "Contattaci",
     "scroll": "Scorri",
     "language": "Lingua",
-    "reserve": "Prenotare",
-    "housingStats": "{count} alloggi · fino a {guests} pers. · da {size} m²"
+    "reserve": "Prenotare"
   },
   "home": {
     "heroEyebrow": "Aparthotel · Sari-Solenzara, Corsica",
@@ -65,10 +64,9 @@
     "introTitle": "Un’arte di vivere mediterranea",
     "introP1": "Nel cuore del villaggio di Sari-Solenzara, a soli 3 minuti a piedi dal porto turistico, Le Gabriel vi accoglie in un contesto elegante e sereno, tra mare e montagna.",
     "introP2": "L’indipendenza di un appartamento unita al comfort e ai servizi di un hotel.",
-    "introP3": "29 appartamenti contemporanei, attrezzati per soggiorni brevi o lunghi, ciascuno con terrazza privata vista mare o vista villaggio.",
+    "introP3": "29 appartamenti contemporanei, attrezzati per soggiorni brevi o lunghi, ciascuno con terrazza privata.",
     "introCta": "Scoprire gli alloggi",
     "housingSurtitle": "Alloggi",
-    "housingTitle": "Monolocali & Appartamenti",
     "wellnessSurtitle": "Spazio relax e benessere",
     "wellnessTitle": "Per un soggiorno rigenerante",
     "allServices": "Tutti i servizi",
@@ -95,34 +93,25 @@
     ]
   },
   "housing": {
-    "studio": {
-      "title": "Monolocali",
-      "beds": "Letto matrimoniale 180×200 + divano letto",
-      "description": "Monolocali eleganti e contemporanei con terrazza privata vista mare o vista villaggio. Cucina completamente attrezzata, biancheria di alta qualità e doppi vetri per un comfort ottimale.",
-      "features": [
-        "Cucina completamente attrezzata",
-        "Aria condizionata",
-        "Ampia terrazza privata",
-        "Doppi vetri",
-        "Biancheria di alta qualità 180×200",
-        "Wi-Fi ad alta velocità gratuito",
-        "Televisione"
-      ]
+    "kind": {
+      "signature": "Monolocali"
     },
-    "appartement": {
-      "title": "Appartamenti con una camera",
-      "beds": "Camera con letto matrimoniale 180×200 + divano letto in soggiorno",
-      "description": "Appartamenti spaziosi con camera separata, soggiorno, cucina completamente attrezzata e ampia terrazza privata vista mare o vista villaggio. Ideali per le famiglie e i soggiorni lunghi.",
-      "features": [
-        "Cucina completamente attrezzata",
-        "Aria condizionata",
-        "Ampia terrazza privata",
-        "Doppi vetri",
-        "Biancheria di alta qualità 180×200",
-        "Wi-Fi ad alta velocità gratuito",
-        "Televisione"
-      ]
-    }
+    "size": "{size} m²",
+    "quantity": "{count} appartamenti ({perFloor} per piano)",
+    "views": {
+      "sea": "Vista mare",
+      "villageMountain": "Vista villaggio / montagna"
+    },
+    "amenities": "Cucina completamente attrezzata, biancheria di alta qualità e doppi vetri per un comfort ottimale.",
+    "features": [
+      "Cucina completamente attrezzata",
+      "Aria condizionata",
+      "Ampia terrazza privata",
+      "Doppi vetri",
+      "Biancheria di alta qualità 180×200",
+      "Wi-Fi ad alta velocità gratuito",
+      "Televisione"
+    ]
   },
   "housingServices": [
     {
@@ -140,13 +129,9 @@
   ],
   "appartementsPage": {
     "eyebrow": "I nostri alloggi",
-    "title": "Monolocali & Appartamenti",
     "introSurtitle": "Alloggi pensati per il vostro comfort",
     "introTitle": "29 appartamenti contemporanei",
-    "introText": "Eleganti e funzionali, tutti i nostri appartamenti dispongono di attrezzature di alto livello e di un’ampia terrazza privata con vista mare o vista villaggio, per vivere appieno l’atmosfera unica della costa orientale.",
-    "countLabel": "{count} alloggi",
-    "upToGuests": "Fino a {guests} pers.",
-    "fromSize": "A partire da {size} m²",
+    "introText": "Eleganti e funzionali, tutti i nostri appartamenti dispongono di attrezzature di alto livello e di un’ampia terrazza privata, per vivere appieno l’atmosfera unica della costa orientale.",
     "servicesSurtitle": "Al vostro servizio",
     "servicesTitle": "Per un soggiorno su misura"
   },
@@ -357,8 +342,6 @@
     "departure": "Partenza",
     "guests": "Ospiti",
     "housingType": "Tipo di alloggio desiderato",
-    "studio": "Monolocale",
-    "apartment": "Appartamento con una camera",
     "either": "Indifferente",
     "message": "Messaggio",
     "submit": "Inviare la richiesta",
@@ -424,7 +407,7 @@
       "excerpt": "Scoprite un nuovo concetto di ospitalità, tra l’intimità di un appartamento e i servizi di un hotel, nel cuore della Corsica.",
       "content": [
         "È con grande orgoglio che apriamo le porte de Le Gabriel, un aparthotel pensato come una casa per ospiti contemporanea nel cuore di Solenzara. Situato tra le spiagge di sabbia fine del sud-est corso e le montagne dell’Alta Rocca, la nostra struttura propone un nuovo concetto di soggiorno: l’intimità e lo spazio di un appartamento, uniti ai servizi che ci si aspetta da un hotel.",
-        "Le Gabriel conta 12 monolocali e 11 appartamenti con una camera, che possono accogliere da 4 a 5 persone. Ogni alloggio dispone di una cucina attrezzata, di una connessione Wi-Fi in fibra, di climatizzazione reversibile, di una terrazza o di un balcone e di biancheria completa. L’arredo, sobrio ed elegante, trae ispirazione dalle tonalità della terra corsa per offrire un ambiente caldo e sereno.",
+        "Le Gabriel propone quattro tipologie: La Signature, 8 appartamenti (2 per piano); L’Azur, 8 appartamenti di 43 m² con vista mare (2 per piano); La Terra, 4 appartamenti di 46 m² con vista villaggio / montagna (1 per piano); Le privilège, 4 appartamenti di 63 m² con vista mare (1 per piano). Gli alloggi possono accogliere da 4 a 5 persone. Ogni alloggio dispone di una cucina attrezzata, di una connessione Wi-Fi in fibra, di climatizzazione reversibile, di una terrazza o di un balcone e di biancheria completa. L’arredo, sobrio ed elegante, trae ispirazione dalle tonalità della terra corsa per offrire un ambiente caldo e sereno.",
         "Oltre agli alloggi, abbiamo immaginato spazi comuni accoglienti: una piscina riscaldata circondata da un giardino mediterraneo, un parcheggio privato e sicuro e una palestra moderna al piano terra, aperta ai residenti e al pubblico. Il nostro team resta a disposizione per organizzare il vostro arrivo, consigliarvi sulla regione e semplificare ogni momento del soggiorno.",
         "Solenzara si rivela un punto di partenza ideale per esplorare la Corsica. Spiagge da sogno, piscine naturali del fiume, Aiguilles de Bavella e villaggi dell’Alta Rocca sono raggiungibili in pochi minuti. Che veniate per il riposo, le escursioni o la scoperta gastronomica, Le Gabriel vi offre un pied-à-terre raffinato, al ritmo dell’isola."
       ]

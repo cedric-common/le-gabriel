@@ -6,7 +6,8 @@ import { Hero } from '../sections/Hero'
 import { FadeIn } from '../components/FadeIn'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { housingCategoryMeta, regionHighlightMeta } from '@/lib/data'
+import { housingTypologies, listHousingNames, regionHighlightMeta } from '@/lib/data'
+import { housingFactLabels } from '@/lib/housingCopy'
 import { ArrowRight } from 'lucide-react'
 import { localeAlternates } from '@/lib/seo'
 
@@ -21,7 +22,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta.home' })
   return {
     title: t('title'),
-    description: t('description'),
+    description: t('description', { names: listHousingNames() }),
     alternates: localeAlternates(locale, '/'),
   }
 }
@@ -91,30 +92,51 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
-        <section className="bg-white py-24 md:py-32">
+        <section id="logements" className="bg-white py-24 md:py-32">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <SectionTitle surtitle={t('housingSurtitle')} title={t('housingTitle')} />
+            <div className="mb-14 text-center">
+              <p className="text-[0.6rem] tracking-[0.4em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] mb-3">
+                {t('housingSurtitle')}
+              </p>
+              <h2 className="text-3xl md:text-5xl font-[family-name:var(--font-cormorant)] font-light text-[#1A1A14] leading-[1.2]">
+                {housingTypologies.map((item) => (
+                  <span key={item.id} className="block">{item.name}</span>
+                ))}
+              </h2>
+              <div className="mt-5 flex justify-center">
+                <div className="h-px w-16 bg-[#6B7240]/40" />
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 gap-8">
-              {housingCategoryMeta.map((c) => (
-                <div key={c.type} className="group relative overflow-hidden aspect-[4/3]">
-                  <Image
-                    src={c.image}
-                    alt={th(`${c.type}.title`)}
-                    fill
-                    unoptimized
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/70 to-transparent" />
-                  <div className="absolute bottom-0 left-0 p-8">
-                    <p className="text-white/60 text-[0.55rem] tracking-[0.35em] uppercase font-[family-name:var(--font-montserrat)] mb-2">
-                      {tc('housingStats', { count: c.count, guests: c.guests, size: c.sizeFrom })}
-                    </p>
-                    <h3 className="text-2xl font-[family-name:var(--font-cormorant)] text-white uppercase tracking-wide">{th(`${c.type}.title`)}</h3>
+              {housingTypologies.map((item) => {
+                const facts = housingFactLabels(th, item).join(' · ')
+                return (
+                  <div key={item.id} className={`group relative flex aspect-[4/3] flex-col overflow-hidden ${item.image ? 'justify-end' : 'justify-center border border-[#E8E4DC] bg-[#F4F1EA]'}`}>
+                    {item.image ? (
+                      <>
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          fill
+                          unoptimized
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0A]/88 via-[#0D0D0A]/25 to-transparent" />
+                      </>
+                    ) : null}
+                    <div className={`relative z-10 p-6 md:p-10 ${item.image ? '' : 'text-center'}`}>
+                      <p className={`mb-3 font-[family-name:var(--font-montserrat)] text-[0.68rem] uppercase leading-relaxed tracking-[0.14em] ${item.image ? 'text-white/85' : 'text-[#6B7240]'}`}>
+                        {facts}
+                      </p>
+                      <h3 className={`font-[family-name:var(--font-cormorant)] text-4xl font-light leading-tight ${item.image ? 'text-white' : 'text-[#1A1A14]'}`}>
+                        {item.name}
+                      </h3>
+                    </div>
+                    <Link href="/appartements" className="absolute inset-0" aria-label={item.name} />
                   </div>
-                  <Link href="/appartements" className="absolute inset-0" />
-                </div>
-              ))}
+                )
+              })}
             </div>
           </div>
         </section>

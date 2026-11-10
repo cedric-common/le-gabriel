@@ -1,9 +1,9 @@
 import { housingTotal, housingTypologies, type HousingTypology } from '@/lib/data'
 
 type HousingTranslator = {
-  (key: 'kind.studio' | 'kind.t2' | 'kind.t3' | 'views.sea' | 'views.villageMountain'): string
+  (key: 'kind.studio' | 'kind.t2' | 'kind.t3' | 'views.sea' | 'views.villageMountain' | 'sofaDouble' | 'sofaSingle'): string
   (key: 'size', values: { size: number }): string
-  (key: 'quantity' | 'total', values: { count: number; perFloor?: number }): string
+  (key: 'total', values: { count: number }): string
 }
 
 export function housingKindLabel(t: HousingTranslator, typology: HousingTypology) {
@@ -17,7 +17,6 @@ export function housingFactLabels(t: HousingTranslator, typology: HousingTypolog
   if (typeof typology.size === 'number') labels.push(t('size', { size: typology.size }))
   if (typology.view === 'sea') labels.push(t('views.sea'))
   if (typology.view === 'villageMountain') labels.push(t('views.villageMountain'))
-  labels.push(t('quantity', { count: typology.count, perFloor: typology.perFloor }))
   return labels
 }
 
@@ -36,9 +35,18 @@ export function housingMetadataSummary(t: HousingTranslator) {
       if (typeof typology.size === 'number') parts.push(t('size', { size: typology.size }))
       if (typology.view === 'sea') parts.push(t('views.sea'))
       if (typology.view === 'villageMountain') parts.push(t('views.villageMountain'))
-      parts.push(t('quantity', { count: typology.count, perFloor: typology.perFloor }))
       return parts.join(', ')
     })
     .join(' · ')
   return `${t('total', { count: housingTotal })}. ${details}`
+}
+
+export function housingFeatureList(
+  t: HousingTranslator,
+  typology: HousingTypology,
+  baseFeatures: string[],
+) {
+  const features = [...baseFeatures, t('sofaDouble')]
+  if (typology.id !== 'signature') features.push(t('sofaSingle'))
+  return features
 }

@@ -6,7 +6,7 @@ import { FadeIn } from '../../components/FadeIn'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { housingTotal, housingTypologies, listHousingNames } from '@/lib/data'
-import { housingKindLabel, housingMetadataSummary } from '@/lib/housingCopy'
+import { housingFeatureList, housingKindLabel, housingMetadataSummary } from '@/lib/housingCopy'
 import { Ruler, ArrowRight, Check } from 'lucide-react'
 import { localeAlternates } from '@/lib/seo'
 
@@ -76,6 +76,7 @@ export default async function AppartementsPage({ params }: { params: Promise<{ l
         <section className="bg-[#FAF8F3] py-20 md:py-28">
           <div className="max-w-6xl mx-auto px-6 lg:px-12 space-y-12 md:space-y-16">
             {housingTypologies.map((item, i) => {
+              const typologyFeatures = housingFeatureList(th, item, features)
               return (
                 <div key={item.id} id={item.id} className="scroll-mt-28">
                   <FadeIn delay={0.05 * i} className="bg-white group">
@@ -100,13 +101,12 @@ export default async function AppartementsPage({ params }: { params: Promise<{ l
                           ) : null}
                           {item.view === 'sea' ? <span>{th('views.sea')}</span> : null}
                           {item.view === 'villageMountain' ? <span>{th('views.villageMountain')}</span> : null}
-                          <span>{th('quantity', { count: item.count, perFloor: item.perFloor })}</span>
                         </div>
                         <p className="text-base md:text-lg font-[family-name:var(--font-cormorant)] text-[#1A1A14]/70 font-light leading-relaxed mb-6">
                           {th('amenities')}
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
-                          {features.map((feature) => (
+                          {typologyFeatures.map((feature) => (
                             <span key={feature} className="text-[0.55rem] tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] text-[#6B7240] border border-[#6B7240]/20 px-2.5 py-1">
                               {feature}
                             </span>

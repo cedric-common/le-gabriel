@@ -100,11 +100,12 @@
     },
     "total": "{count} appartements",
     "size": "{size} m²",
-    "quantity": "{count} appartements ({perFloor} par étage)",
     "views": {
       "sea": "Vue mer",
       "villageMountain": "Vue village / montagne"
     },
+    "sofaDouble": "Canapé-lit 2 places 160×195 cm",
+    "sofaSingle": "Canapé-lit 1 place 100×195 cm",
     "amenities": "Cuisine entièrement équipée, literie haut de gamme et double vitrage pour un confort optimal.",
     "features": [
       "Cuisine entièrement équipée",
@@ -410,7 +411,7 @@
       "excerpt": "Découvrez un nouveau concept d’hébergement entre l’intimité d’un appartement et les services d’un hôtel au cœur de la Corse.",
       "content": [
         "C’est avec une grande fierté que nous ouvrons les portes du Gabriel, un appart-hôtel pensé comme une maison d’hôtes contemporaine au cœur de Solenzara. Situé entre les plages de sable fin du Sud-Est corse et les montagnes de l’Alta Rocca, notre établissement propose un nouveau concept d’hébergement : l’intimité et l’espace d’un appartement, associés aux services attendus d’un hôtel.",
-        "Le Gabriel compte 24 appartements : La Signature, studio 1 pièce, 8 appartements (2 par étage) ; L’Azur, T2, 8 appartements de 43 m² avec vue mer (2 par étage) ; La Terra, T2, 4 appartements de 46 m² avec vue village / montagne (1 par étage) ; Le Privilège, T3, 4 appartements de 63 m² avec vue mer (1 par étage). Chaque logement dispose d’une cuisine équipée, d’une connexion WiFi fibre, de la climatisation réversible, d’une terrasse ou d’un balcon, et d’un linge de maison complet. La décoration, sobre et élégante, puise dans les tonalités de la terre corse pour offrir un cadre chaleureux et apaisant.",
+        "Le Gabriel compte 30 appartements : La Signature, studio 1 pièce ; L’Azur, T2, 43 m² avec vue mer ; La Terra, T2, 46 m² avec vue village / montagne ; Le Privilège, T3, 63 m² avec vue mer. Chaque logement dispose d’une cuisine équipée, d’une connexion WiFi fibre, de la climatisation réversible, d’une terrasse ou d’un balcon, et d’un linge de maison complet. La décoration, sobre et élégante, puise dans les tonalités de la terre corse pour offrir un cadre chaleureux et apaisant.",
         "Au-delà des logements, nous avons imaginé des espaces communs conviviaux : une piscine chauffée entourée d’un jardin méditerranéen, un parking privé et sécurisé, ainsi qu’une salle de sport moderne au rez-de-chaussée, ouverte aux résidents et au public. Notre équipe reste disponible pour organiser votre arrivée, vous conseiller sur la région et faciliter chaque étape de votre séjour.",
         "Solenzara se révèle comme un point de départ idéal pour explorer la Corse. Plages paradisiaques, piscines naturelles de la rivière, Aiguilles de Bavella et villages de l’Alta Rocca sont accessibles en quelques minutes. Que vous veniez pour le farniente, la randonnée ou la découverte gastronomique, Le Gabriel vous offre un pied-à-terre raffiné au rythme de l’île."
       ]
